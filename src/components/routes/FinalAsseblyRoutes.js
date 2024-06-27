@@ -1,15 +1,17 @@
 import { Suspense } from "react";
-import { Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
+import FinalAssemblyHome from "../FinalAssembly/FinalAssemblyHome";
 
 const FinalAssemblyRoutes = (p) => {
-
-    return(
-        <Suspense>
-        <Routes>
-        
-        </Routes>
-        </Suspense>
-    )
+  return (
+    <Suspense>
+      <Routes>
+        <Route index path="/" element={<Navigate replace to="/home" />} />
+        <Route exact path="/home" element={<FinalAssemblyHome />} />
+        <Route path="*" element={<Navigate replace to="/home" />} />
+      </Routes>
+    </Suspense>
+  );
 };
 
 export default FinalAssemblyRoutes;

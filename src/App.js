@@ -3,6 +3,7 @@ import "./App.css";
 import NavBar from "./components/UI/NavBar";
 import Login from "./components/login/Login";
 import { useSelector } from "react-redux";
+import FinalAssemblyRoutes from "./components/routes/FinalAsseblyRoutes";
 
 function App() {
   const { isLoged } = useSelector((s) => s.login);
@@ -11,7 +12,12 @@ function App() {
     <div className="App">
       <NavBar />
 
-      {<React.Fragment>{!isLoged.login && <Login />}</React.Fragment>}
+      {
+        <React.Fragment>
+          {!isLoged.login && <Login />}
+          {isLoged.login && isLoged.role === "fa" && <FinalAssemblyRoutes />}
+        </React.Fragment>
+      }
     </div>
   );
 }
