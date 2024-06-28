@@ -1,12 +1,13 @@
 import { useState } from "react";
 import c from "./CuttingHome.module.css";
 import { getMonth } from "../hooks/handyfn";
-import { BESTCUTTING } from "../../DemoData";
+import { BESTCUTTING, BESTLPOP } from "../../DemoData";
 
 const CuttingHome = (p) => {
   const [month, setMonth] = useState(getMonth());
 
   const data = BESTCUTTING.filter((f) => f.month === month);
+  const datalp = BESTLPOP.filter((f) => f.month === month);
   return (
     <div className={c.container}>
       <div className={c.title2}>
@@ -24,37 +25,67 @@ const CuttingHome = (p) => {
             />
           </span>
         </div>
-        <div
-          className={`${c.rowData}`}
-          style={{ borderBottom: "1px solid #4E7C88" }}
-        >
-          <div className={`${c.crEff} ${c.first}`}>
-            <span>Cutting / OP</span>
-          </div>
-          <div className={`${c.AbCompDac} ${c.firstacd}`}>
-            <span>PMH</span>
-            <span>SetupTime</span>
-            <span>Down Time</span>
-            <span>OEE</span>
-          </div>
+        <div className={c.employeeT}>
+          <span></span>
+          <h1>cutting</h1>
         </div>
-        {data.length > 0 ? (
-          data[0].data.map((m) => (
-            <div className={c.rowData}>
-              <div className={c.crEff}>
-                <span>{m.matricule}</span>
+        <div className={c.containerData}>
+          <div className={c.cutting}>
+            <div
+              className={`${c.rowData}`}
+              style={{ borderBottom: "1px solid #4E7C88" }}
+            >
+              <div className={`${c.crEff} ${c.first}`}>
+                <span>Cutting / OP</span>
               </div>
-              <div className={c.AbCompDac}>
-                <span>{m.pmh}</span>
-                <span>{m.setupTime}</span>
-                <span>{m.downTime}</span>
-                <span>{m.oee}</span>
+              <div className={`${c.AbCompDac} ${c.firstacd}`}>
+                <span>PMH</span>
+                <span>SetupTime</span>
+                <span>Down Time</span>
+                <span>OEE</span>
               </div>
             </div>
-          ))
-        ) : (
-          <h4 className={c.noCrewS}>no data found for this month</h4>
-        )}
+            {data.length > 0 ? (
+              data[0].data.map((m) => (
+                <div className={c.rowData}>
+                  <div className={c.crEff}>
+                    <span>{m.matricule}</span>
+                  </div>
+                  <div className={c.AbCompDac}>
+                    <span>{m.pmh}</span>
+                    <span>{m.setupTime}</span>
+                    <span>{m.downTime}</span>
+                    <span>{m.oee}</span>
+                  </div>
+                </div>
+              ))
+            ) : (
+              <h4 className={c.noCrewS}>no data found for this month</h4>
+            )}
+          </div>
+          <div className={c.employeeT} style={{ marginTop: "16px" }}>
+            <span></span>
+            <h1>leadprep</h1>
+          </div>
+          <div className={c.lp}>
+            <div className={c.header}>
+              <span>LP / OP</span>
+              <span>PMH</span>
+            </div>
+            <div className={c.body}>
+              {datalp.length > 0 ? (
+                datalp[0].data.map((m) => (
+                  <div className={c.rowDatab}>
+                    <span>{m.matricule}</span>
+                    <span>{m.pmh}</span>
+                  </div>
+                ))
+              ) : (
+                <h4 className={c.noCrewS}>no data found for this month</h4>
+              )}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

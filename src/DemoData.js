@@ -585,5 +585,231 @@ export const BESTCUTTING = [
   },
 ];
 
+export const BESTLPOP = [
+  {
+    "month": "2024-01",
+    "data": [
+      {
+        "matricule": 6268,
+        "pmh": "86%"
+      },
+      {
+        "matricule": 1234,
+        "pmh": "85%"
+      },
+      {
+        "matricule": 5678,
+        "pmh": "90%"
+      },
+      {
+        "matricule": 4321,
+        "pmh": "82%"
+      },
+      {
+        "matricule": 8765,
+        "pmh": "84%"
+      },
+      {
+        "matricule": 3456,
+        "pmh": "81%"
+      },
+      {
+        "matricule": 7890,
+        "pmh": "87%"
+      },
+      {
+        "matricule": 4567,
+        "pmh": "83%"
+      },
+      {
+        "matricule": 8901,
+        "pmh": "86%"
+      },
+      {
+        "matricule": 5670,
+        "pmh": "89%"
+      }
+    ]
+  },
+  {
+    "month": "2024-02",
+    "data": [
+      {
+        "matricule": 2345,
+        "pmh": "82%"
+      },
+      {
+        "matricule": 6789,
+        "pmh": "86%"
+      },
+      {
+        "matricule": 3452,
+        "pmh": "84%"
+      },
+      {
+        "matricule": 7893,
+        "pmh": "81%"
+      },
+      {
+        "matricule": 4568,
+        "pmh": "87%"
+      },
+      {
+        "matricule": 8902,
+        "pmh": "83%"
+      },
+      {
+        "matricule": 5671,
+        "pmh": "89%"
+      },
+      {
+        "matricule": 6780,
+        "pmh": "85%"
+      },
+      {
+        "matricule": 7891,
+        "pmh": "88%"
+      },
+      {
+        "matricule": 8903,
+        "pmh": "86%"
+      }
+    ]
+  },
+  {
+    "month": "2024-03",
+    "data": [
+      {
+        "matricule": 3456,
+        "pmh": "83%"
+      },
+      {
+        "matricule": 7890,
+        "pmh": "87%"
+      },
+      {
+        "matricule": 4567,
+        "pmh": "84%"
+      },
+      {
+        "matricule": 8901,
+        "pmh": "85%"
+      },
+      {
+        "matricule": 5670,
+        "pmh": "81%"
+      },
+      {
+        "matricule": 6780,
+        "pmh": "89%"
+      },
+      {
+        "matricule": 7891,
+        "pmh": "88%"
+      },
+      {
+        "matricule": 8902,
+        "pmh": "86%"
+      },
+      {
+        "matricule": 5671,
+        "pmh": "82%"
+      },
+      {
+        "matricule": 6781,
+        "pmh": "84%"
+      }
+    ]
+  },
+  {
+    "month": "2024-04",
+    "data": [
+      {
+        "matricule": 4567,
+        "pmh": "86%"
+      },
+      {
+        "matricule": 8901,
+        "pmh": "82%"
+      },
+      {
+        "matricule": 5670,
+        "pmh": "83%"
+      },
+      {
+        "matricule": 6780,
+        "pmh": "89%"
+      },
+      {
+        "matricule": 7891,
+        "pmh": "88%"
+      },
+      {
+        "matricule": 8902,
+        "pmh": "85%"
+      },
+      {
+        "matricule": 5671,
+        "pmh": "87%"
+      },
+      {
+        "matricule": 6781,
+        "pmh": "81%"
+      },
+      {
+        "matricule": 7892,
+        "pmh": "84%"
+      },
+      {
+        "matricule": 8903,
+        "pmh": "86%"
+      }
+    ]
+  },
+  {
+    "month": "2024-05",
+    "data": [
+      {
+        "matricule": 5670,
+        "pmh": "80%"
+      },
+      {
+        "matricule": 6780,
+        "pmh": "85%"
+      },
+      {
+        "matricule": 7890,
+        "pmh": "90%"
+      },
+      {
+        "matricule": 8900,
+        "pmh": "82%"
+      },
+      {
+        "matricule": 1234,
+        "pmh": "84%"
+      },
+      {
+        "matricule": 2345,
+        "pmh": "81%"
+      },
+      {
+        "matricule": 3456,
+        "pmh": "87%"
+      },
+      {
+        "matricule": 4567,
+        "pmh": "83%"
+      },
+      {
+        "matricule": 5678,
+        "pmh": "86%"
+      },
+      {
+        "matricule": 6789,
+        "pmh": "89%"
+      }
+    ]
+  }
+]
 
-export 
