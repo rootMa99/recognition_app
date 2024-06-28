@@ -16,6 +16,7 @@ function App() {
         <React.Fragment>
           {!isLoged.login && <Login />}
           {isLoged.login && isLoged.role === "fa" && <FinalAssemblyRoutes />}
+          {isLoged.login && isLoged.role === "cutting" && <FinalAssemblyRoutes />}
         </React.Fragment>
       }
     </div>

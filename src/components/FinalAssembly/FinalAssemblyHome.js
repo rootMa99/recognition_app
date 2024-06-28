@@ -5,10 +5,7 @@ import { getMonth } from "../hooks/handyfn";
 
 const FinalAssemblyHome = (p) => {
   const [month, setMonth] = useState(getMonth());
-  console.log(
-    month,
-    BESTCREW.filter((f) => f.month === month.split("-")[1])
-  );
+
   const data = BESTCREW.filter((f) => f.month === month);
   return (
     <div className={c.container}>
