@@ -1,6 +1,11 @@
 import c from "./FinalAssemblyHome.module.css";
 import { BESTCREW } from "../../DemoData";
+import { useState } from "react";
+import { getMonth } from "../hooks/handyfn";
+
 const FinalAssemblyHome = (p) => {
+  const [month, setMonth]=useState(getMonth())
+  console.log(month, BESTCREW)
   return (
     <div className={c.container}>
       <div className={c.title2}>
@@ -10,7 +15,7 @@ const FinalAssemblyHome = (p) => {
       <div className={c.content}>
         <div className={c.monthH}>
           <span className={c.month}>Month:</span>
-          <span className={c.monthD}><input type="month" onChange={e=>console.log(e.target.value)}/></span>
+          <span className={c.monthD}><input type="month" value={month} onChange={e=>setMonth(e.target.value)}/></span>
         </div>
         <div className={`${c.rowData}`} style={{borderBottom:"1px solid #4E7C88"}}>
           <div className={`${c.crEff} ${c.first}`}>
@@ -27,12 +32,12 @@ const FinalAssemblyHome = (p) => {
           <div className={c.rowData}>
             <div className={c.crEff}>
               <span>{m.crew}</span>
-              <span>{m.efficiency}% / 55%</span>
+              <span>{m.efficiency}% | 55%</span>
             </div>
             <div className={c.AbCompDac}>
-              <span>{m.abs} / 55%</span>
-              <span>{m.cc} / 55%</span>
-              <span>{m.dailyKaizen} / 55%</span>
+              <span>{m.abs} | 55%</span>
+              <span>{m.cc} | 55%</span>
+              <span>{m.dailyKaizen} | 55%</span>
             </div>
           </div>
         ))}

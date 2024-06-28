@@ -101,6 +101,7 @@
     text-align: center;
     padding: 10px 0;
     font-size: 16px;
+    outline: none;
   }
    .monthH input[type="month"]::-webkit-calendar-picker-indicator {
     width: 10px;
