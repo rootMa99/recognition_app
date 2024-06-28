@@ -5,6 +5,7 @@ import Login from "./components/login/Login";
 import { useSelector } from "react-redux";
 import FinalAssemblyRoutes from "./components/routes/FinalAsseblyRoutes";
 import CuttingRoutes from "./components/routes/CuttingRoutes";
+import HerosRoutes from "./components/routes/HerosRoutes";
 
 function App() {
   const { isLoged } = useSelector((s) => s.login);
@@ -18,6 +19,7 @@ function App() {
           {!isLoged.login && <Login />}
           {isLoged.login && isLoged.role === "fa" && <FinalAssemblyRoutes />}
           {isLoged.login && isLoged.role === "cutting" && <CuttingRoutes />}
+          {isLoged.login && isLoged.role === "lean" && <HerosRoutes />}
         </React.Fragment>
       }
     </div>

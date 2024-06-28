@@ -814,3 +814,537 @@ export const BESTLPOP = [
     ],
   },
 ];
+
+export const QUALITYHERO = [
+  {
+    month: "2024-01",
+    data: [
+      {
+        matricule: 2635,
+        detection: 4,
+        occurrence: 2,
+        security: 3,
+      },
+      {
+        matricule: 1234,
+        detection: 3,
+        occurrence: 1,
+        security: 4,
+      },
+      {
+        matricule: 5678,
+        detection: 2,
+        occurrence: 4,
+        security: 5,
+      },
+      {
+        matricule: 4321,
+        detection: 5,
+        occurrence: 3,
+        security: 1,
+      },
+      {
+        matricule: 8765,
+        detection: 1,
+        occurrence: 5,
+        security: 2,
+      },
+    ],
+  },
+  {
+    month: "2024-02",
+    data: [
+      {
+        matricule: 3456,
+        detection: 3,
+        occurrence: 2,
+        security: 5,
+      },
+      {
+        matricule: 7890,
+        detection: 4,
+        occurrence: 1,
+        security: 3,
+      },
+      {
+        matricule: 4567,
+        detection: 2,
+        occurrence: 3,
+        security: 4,
+      },
+      {
+        matricule: 8901,
+        detection: 5,
+        occurrence: 4,
+        security: 1,
+      },
+      {
+        matricule: 5670,
+        detection: 1,
+        occurrence: 5,
+        security: 2,
+      },
+    ],
+  },
+  {
+    month: "2024-03",
+    data: [
+      {
+        matricule: 6780,
+        detection: 2,
+        occurrence: 1,
+        security: 4,
+      },
+      {
+        matricule: 7891,
+        detection: 3,
+        occurrence: 5,
+        security: 2,
+      },
+      {
+        matricule: 8902,
+        detection: 4,
+        occurrence: 2,
+        security: 3,
+      },
+      {
+        matricule: 5671,
+        detection: 1,
+        occurrence: 4,
+        security: 5,
+      },
+      {
+        matricule: 6781,
+        detection: 5,
+        occurrence: 3,
+        security: 1,
+      },
+    ],
+  },
+  {
+    month: "2024-04",
+    data: [
+      {
+        matricule: 7892,
+        detection: 4,
+        occurrence: 5,
+        security: 2,
+      },
+      {
+        matricule: 8903,
+        detection: 3,
+        occurrence: 1,
+        security: 4,
+      },
+      {
+        matricule: 5672,
+        detection: 2,
+        occurrence: 3,
+        security: 5,
+      },
+      {
+        matricule: 6782,
+        detection: 1,
+        occurrence: 4,
+        security: 3,
+      },
+      {
+        matricule: 7893,
+        detection: 5,
+        occurrence: 2,
+        security: 1,
+      },
+    ],
+  },
+  {
+    month: "2024-05",
+    data: [
+      {
+        matricule: 8904,
+        detection: 3,
+        occurrence: 4,
+        security: 2,
+      },
+      {
+        matricule: 5673,
+        detection: 4,
+        occurrence: 1,
+        security: 5,
+      },
+      {
+        matricule: 6783,
+        detection: 2,
+        occurrence: 5,
+        security: 3,
+      },
+      {
+        matricule: 7894,
+        detection: 5,
+        occurrence: 2,
+        security: 1,
+      },
+      {
+        matricule: 8905,
+        detection: 1,
+        occurrence: 3,
+        security: 4,
+      },
+    ],
+  },
+];
+
+export const SAFETYHERO = [
+  {
+    month: "2024-01",
+    data: [
+      {
+        matricule: 3456,
+        detection: 2,
+        occurrence: 3,
+        security: 4,
+      },
+      {
+        matricule: 7890,
+        detection: 4,
+        occurrence: 1,
+        security: 5,
+      },
+      {
+        matricule: 1235,
+        detection: 3,
+        occurrence: 2,
+        security: 1,
+      },
+      {
+        matricule: 6789,
+        detection: 5,
+        occurrence: 4,
+        security: 3,
+      },
+      {
+        matricule: 4568,
+        detection: 1,
+        occurrence: 5,
+        security: 2,
+      },
+    ],
+  },
+  {
+    month: "2024-02",
+    data: [
+      {
+        matricule: 2345,
+        detection: 4,
+        occurrence: 1,
+        security: 3,
+      },
+      {
+        matricule: 6780,
+        detection: 3,
+        occurrence: 5,
+        security: 2,
+      },
+      {
+        matricule: 5671,
+        detection: 1,
+        occurrence: 4,
+        security: 5,
+      },
+      {
+        matricule: 8902,
+        detection: 2,
+        occurrence: 3,
+        security: 1,
+      },
+      {
+        matricule: 7891,
+        detection: 5,
+        occurrence: 2,
+        security: 4,
+      },
+    ],
+  },
+  {
+    month: "2024-03",
+    data: [
+      {
+        matricule: 5670,
+        detection: 3,
+        occurrence: 4,
+        security: 2,
+      },
+      {
+        matricule: 6781,
+        detection: 4,
+        occurrence: 1,
+        security: 5,
+      },
+      {
+        matricule: 8903,
+        detection: 2,
+        occurrence: 5,
+        security: 3,
+      },
+      {
+        matricule: 7892,
+        detection: 1,
+        occurrence: 3,
+        security: 4,
+      },
+      {
+        matricule: 5672,
+        detection: 5,
+        occurrence: 2,
+        security: 1,
+      },
+    ],
+  },
+  {
+    month: "2024-04",
+    data: [
+      {
+        matricule: 6782,
+        detection: 3,
+        occurrence: 4,
+        security: 5,
+      },
+      {
+        matricule: 8904,
+        detection: 1,
+        occurrence: 5,
+        security: 2,
+      },
+      {
+        matricule: 7893,
+        detection: 4,
+        occurrence: 2,
+        security: 1,
+      },
+      {
+        matricule: 5673,
+        detection: 5,
+        occurrence: 3,
+        security: 4,
+      },
+      {
+        matricule: 6783,
+        detection: 2,
+        occurrence: 1,
+        security: 3,
+      },
+    ],
+  },
+  {
+    month: "2024-05",
+    data: [
+      {
+        matricule: 8905,
+        detection: 5,
+        occurrence: 4,
+        security: 3,
+      },
+      {
+        matricule: 7894,
+        detection: 1,
+        occurrence: 3,
+        security: 5,
+      },
+      {
+        matricule: 5674,
+        detection: 4,
+        occurrence: 2,
+        security: 1,
+      },
+      {
+        matricule: 6784,
+        detection: 2,
+        occurrence: 5,
+        security: 4,
+      },
+      {
+        matricule: 8906,
+        detection: 3,
+        occurrence: 1,
+        security: 2,
+      },
+    ],
+  },
+];
+
+export const LEANHERO= [
+  {
+    "month": "2024-01",
+    "data": [
+      {
+        "matricule": 3456,
+        "detection": 2,
+        "occurrence": 3,
+        "security": 4
+      },
+      {
+        "matricule": 7890,
+        "detection": 4,
+        "occurrence": 1,
+        "security": 5
+      },
+      {
+        "matricule": 1235,
+        "detection": 3,
+        "occurrence": 2,
+        "security": 1
+      },
+      {
+        "matricule": 6789,
+        "detection": 5,
+        "occurrence": 4,
+        "security": 3
+      },
+      {
+        "matricule": 4568,
+        "detection": 1,
+        "occurrence": 5,
+        "security": 2
+      }
+    ]
+  },
+  {
+    "month": "2024-02",
+    "data": [
+      {
+        "matricule": 2345,
+        "detection": 4,
+        "occurrence": 1,
+        "security": 3
+      },
+      {
+        "matricule": 6780,
+        "detection": 3,
+        "occurrence": 5,
+        "security": 2
+      },
+      {
+        "matricule": 5671,
+        "detection": 1,
+        "occurrence": 4,
+        "security": 5
+      },
+      {
+        "matricule": 8902,
+        "detection": 2,
+        "occurrence": 3,
+        "security": 1
+      },
+      {
+        "matricule": 7891,
+        "detection": 5,
+        "occurrence": 2,
+        "security": 4
+      }
+    ]
+  },
+  {
+    "month": "2024-03",
+    "data": [
+      {
+        "matricule": 5670,
+        "detection": 3,
+        "occurrence": 4,
+        "security": 2
+      },
+      {
+        "matricule": 6781,
+        "detection": 4,
+        "occurrence": 1,
+        "security": 5
+      },
+      {
+        "matricule": 8903,
+        "detection": 2,
+        "occurrence": 5,
+        "security": 3
+      },
+      {
+        "matricule": 7892,
+        "detection": 1,
+        "occurrence": 3,
+        "security": 4
+      },
+      {
+        "matricule": 5672,
+        "detection": 5,
+        "occurrence": 2,
+        "security": 1
+      }
+    ]
+  },
+  {
+    "month": "2024-04",
+    "data": [
+      {
+        "matricule": 6782,
+        "detection": 3,
+        "occurrence": 4,
+        "security": 5
+      },
+      {
+        "matricule": 8904,
+        "detection": 1,
+        "occurrence": 5,
+        "security": 2
+      },
+      {
+        "matricule": 7893,
+        "detection": 4,
+        "occurrence": 2,
+        "security": 1
+      },
+      {
+        "matricule": 5673,
+        "detection": 5,
+        "occurrence": 3,
+        "security": 4
+      },
+      {
+        "matricule": 6783,
+        "detection": 2,
+        "occurrence": 1,
+        "security": 3
+      }
+    ]
+  },
+  {
+    "month": "2024-05",
+    "data": [
+      {
+        "matricule": 8905,
+        "detection": 5,
+        "occurrence": 4,
+        "security": 3
+      },
+      {
+        "matricule": 7894,
+        "detection": 1,
+        "occurrence": 3,
+        "security": 5
+      },
+      {
+        "matricule": 5674,
+        "detection": 4,
+        "occurrence": 2,
+        "security": 1
+      },
+      {
+        "matricule": 6784,
+        "detection": 2,
+        "occurrence": 5,
+        "security": 4
+      },
+      {
+        "matricule": 8906,
+        "detection": 3,
+        "occurrence": 1,
+        "security": 2
+      }
+    ]
+  }
+]
