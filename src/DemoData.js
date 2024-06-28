@@ -8,7 +8,7 @@ export const USERS = [
 
 export const BESTCREW = [
   {
-    month: "01",
+    month: "2024-01",
     data: [
       {
         crew: "k05C",
@@ -48,7 +48,7 @@ export const BESTCREW = [
     ],
   },
   {
-    month: "02",
+    month: "2024-02",
     data: [
       {
         crew: "k03C",
@@ -88,7 +88,7 @@ export const BESTCREW = [
     ],
   },
   {
-    month: "03",
+    month: "2024-03",
     data: [
       {
         crew: "k02C",
@@ -128,7 +128,7 @@ export const BESTCREW = [
     ],
   },
   {
-    month: "04",
+    month: "2024-04",
     data: [
       {
         crew: "k05A",
@@ -168,7 +168,7 @@ export const BESTCREW = [
     ],
   },
   {
-    month: "05",
+    month: "2024-05",
     data: [
       {
         crew: "k03A",

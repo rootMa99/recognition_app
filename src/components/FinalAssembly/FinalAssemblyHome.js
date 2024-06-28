@@ -5,7 +5,8 @@ import { getMonth } from "../hooks/handyfn";
 
 const FinalAssemblyHome = (p) => {
   const [month, setMonth]=useState(getMonth())
-  console.log(month, BESTCREW)
+  console.log(month, BESTCREW.filter(f=>f.month===month.split("-")[1]))
+  const data=BESTCREW.filter(f=>f.month===month)
   return (
     <div className={c.container}>
       <div className={c.title2}>
@@ -28,19 +29,19 @@ const FinalAssemblyHome = (p) => {
             <span>daily kaizen</span>
           </div>
         </div>
-        {BESTCREW.map((m) => (
+        {data.length>0?data[0].data.map((m) => (
           <div className={c.rowData}>
             <div className={c.crEff}>
               <span>{m.crew}</span>
-              <span>{m.efficiency}% | 55%</span>
+              <span>{m.efficiency.act}% | {m.efficiency.target}%</span>
             </div>
             <div className={c.AbCompDac}>
-              <span>{m.abs} | 55%</span>
-              <span>{m.cc} | 55%</span>
-              <span>{m.dailyKaizen} | 55%</span>
+              <span>{m.abs.act} | {m.abs.target}</span>
+              <span>{m.cc.act} | {m.cc.target} </span>
+              <span>{m.dailyKaizen.act} | {m.dailyKaizen.target}</span>
             </div>
           </div>
-        ))}
+        )): <h4>no data found for this month</h4>}
       </div>
     </div>
   );
