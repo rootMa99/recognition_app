@@ -4,9 +4,12 @@ import { useState } from "react";
 import { getMonth } from "../hooks/handyfn";
 
 const FinalAssemblyHome = (p) => {
-  const [month, setMonth]=useState(getMonth())
-  console.log(month, BESTCREW.filter(f=>f.month===month.split("-")[1]))
-  const data=BESTCREW.filter(f=>f.month===month)
+  const [month, setMonth] = useState(getMonth());
+  console.log(
+    month,
+    BESTCREW.filter((f) => f.month === month.split("-")[1])
+  );
+  const data = BESTCREW.filter((f) => f.month === month);
   return (
     <div className={c.container}>
       <div className={c.title2}>
@@ -16,9 +19,18 @@ const FinalAssemblyHome = (p) => {
       <div className={c.content}>
         <div className={c.monthH}>
           <span className={c.month}>Month:</span>
-          <span className={c.monthD}><input type="month" value={month} onChange={e=>setMonth(e.target.value)}/></span>
+          <span className={c.monthD}>
+            <input
+              type="month"
+              value={month}
+              onChange={(e) => setMonth(e.target.value)}
+            />
+          </span>
         </div>
-        <div className={`${c.rowData}`} style={{borderBottom:"1px solid #4E7C88"}}>
+        <div
+          className={`${c.rowData}`}
+          style={{ borderBottom: "1px solid #4E7C88" }}
+        >
           <div className={`${c.crEff} ${c.first}`}>
             <span>crew</span>
             <span>efficiency</span>
@@ -29,19 +41,31 @@ const FinalAssemblyHome = (p) => {
             <span>daily kaizen</span>
           </div>
         </div>
-        {data.length>0?data[0].data.map((m) => (
-          <div className={c.rowData}>
-            <div className={c.crEff}>
-              <span>{m.crew}</span>
-              <span>{m.efficiency.act}% | {m.efficiency.target}%</span>
+        {data.length > 0 ? (
+          data[0].data.map((m) => (
+            <div className={c.rowData}>
+              <div className={c.crEff}>
+                <span>{m.crew}</span>
+                <span>
+                  {m.efficiency.act}% | {m.efficiency.target}%
+                </span>
+              </div>
+              <div className={c.AbCompDac}>
+                <span>
+                  {m.abs.act} | {m.abs.target}
+                </span>
+                <span>
+                  {m.cc.act} | {m.cc.target}{" "}
+                </span>
+                <span>
+                  {m.dailyKaizen.act} | {m.dailyKaizen.target}
+                </span>
+              </div>
             </div>
-            <div className={c.AbCompDac}>
-              <span>{m.abs.act} | {m.abs.target}</span>
-              <span>{m.cc.act} | {m.cc.target} </span>
-              <span>{m.dailyKaizen.act} | {m.dailyKaizen.target}</span>
-            </div>
-          </div>
-        )): <h4 className={c.noCrewS}>no data found for this month</h4>}
+          ))
+        ) : (
+          <h4 className={c.noCrewS}>no data found for this month</h4>
+        )}
       </div>
     </div>
   );
