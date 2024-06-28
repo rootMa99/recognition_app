@@ -10,7 +10,7 @@ const FinalAssemblyHome = (p) => {
       <div className={c.content}>
         <div className={c.monthH}>
           <span className={c.month}>Month:</span>
-          <span className={c.monthD}><input type="month" /></span>
+          <span className={c.monthD}><input type="month" onChange={e=>console.log(e.target.value)}/></span>
         </div>
         <div className={`${c.rowData}`} style={{borderBottom:"1px solid #4E7C88"}}>
           <div className={`${c.crEff} ${c.first}`}>

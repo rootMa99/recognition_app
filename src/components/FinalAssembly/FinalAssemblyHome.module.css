@@ -42,9 +42,10 @@
   display: flex;
   width: fit-content;
   /* justify-content: space-between; */
-  gap: 16px;
+  gap: 10px;
   text-transform: uppercase;
   /* margin-bottom: 10px; */
+  align-items: center;
 }
 .rowData {
   display: flex;
@@ -90,3 +91,27 @@
     color: black;
   }
    */
+   .monthH input {
+    border-radius: 6px;
+    font-family: inherit;
+    border: 1px solid transparent;
+    color: #f84018;
+    background-color: transparent;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+  }
+   .monthH input[type="month"]::-webkit-calendar-picker-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: #f84018;
+    padding: 5px;
+  }
+  .monthH input[type="month"]::-webkit-calendar-picker-indicator:hover {
+    transform: scale(1.2);
+    background-color: #fd7d61;
+  }
