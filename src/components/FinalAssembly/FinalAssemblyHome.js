@@ -30,12 +30,27 @@ const FinalAssemblyHome = (p) => {
         >
           <div className={`${c.crEff} ${c.first}`}>
             <span>crew</span>
-            <span>efficiency</span>
+            <span>
+              efficiency <br />
+              <p className={c.pargi}>act | tar</p>
+            </span>
           </div>
           <div className={`${c.AbCompDac} ${c.firstacd}`}>
-            <span>abssenteism</span>
-            <span>Custmer complain</span>
-            <span>daily kaizen</span>
+            <span>
+              abssenteism
+              <br />
+              <p className={c.pargi}>act | tar</p>
+            </span>
+            <span>
+              Custmer complain
+              <br />
+              <p className={c.pargi}>act | tar</p>
+            </span>
+            <span>
+              daily kaizen
+              <br />
+              <p className={c.pargi}>act | tar</p>
+            </span>
           </div>
         </div>
         {data.length > 0 ? (
