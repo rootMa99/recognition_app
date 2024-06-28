@@ -41,7 +41,7 @@ const FinalAssemblyHome = (p) => {
               <span>{m.dailyKaizen.act} | {m.dailyKaizen.target}</span>
             </div>
           </div>
-        )): <h4>no data found for this month</h4>}
+        )): <h4 className={c.noCrewS}>no data found for this month</h4>}
       </div>
     </div>
   );
