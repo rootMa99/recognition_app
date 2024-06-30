@@ -1354,11 +1354,11 @@ export const PROJECTCI = [
     month: "2024-01",
     data: [
       {
-        projectName: "Recognition",
-        leader: "Ouassil",
-        teamMembers: ["Anass", "Yazid"],
-        saving: 400,
-        approach: "Implementing advanced image processing techniques",
+        projectName: "Customer Service",
+        leader: "Wafaa",
+        teamMembers: ["Ibrahim", "Sara"],
+        saving: 490,
+        approach: "Improving customer interaction methods",
       },
       {
         projectName: "Automation",
@@ -1654,12 +1654,13 @@ export const PROJECTCI = [
     month: "2024-05",
     data: [
       {
-        projectName: "Customer Service",
-        leader: "Wafaa",
-        teamMembers: ["Ibrahim", "Sara"],
-        saving: 490,
-        approach: "Improving customer interaction methods",
+        projectName: "Recognition",
+        leader: "Ouassil",
+        teamMembers: ["Anass", "Yazid"],
+        saving: 400,
+        approach: "Implementing advanced image processing techniques",
       },
+
       {
         projectName: "Compliance",
         leader: "Ismail",
