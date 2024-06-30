@@ -41,13 +41,16 @@ const Hero = (p) => {
       ) : (
         fd[0].data.map((m) => (
           <div className={`${c.rowData}`}>
-            <div className={`${c.crEff}`} style={
+            <div
+              className={`${c.crEff}`}
+              style={
                 p.type === "safety"
                   ? { backgroundColor: "#6579E2" }
                   : p.type === "lean"
                   ? { backgroundColor: "#FFA211" }
                   : {}
-              }>
+              }
+            >
               <span>{m.matricule}</span>
             </div>
             <div className={`${c.AbCompDac}`}>

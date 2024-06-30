@@ -55,6 +55,7 @@
   .content {
     width: 95%;
     margin: auto;
+    padding-bottom: 2rem;
   }
   .month {
     color: #e5e1da;
