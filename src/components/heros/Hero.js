@@ -18,7 +18,16 @@ const Hero = (p) => {
         className={`${c.rowData}`}
         style={{ borderBottom: "1px solid #4E7C88" }}
       >
-        <div className={`${c.crEff}`}>
+        <div
+          className={`${c.crEff}`}
+          style={
+            p.type === "safety"
+              ? { backgroundColor: "#6579E2" }
+              : p.type === "lean"
+              ? { backgroundColor: "#FFA211" }
+              : {}
+          }
+        >
           <span>matricule</span>
         </div>
         <div className={`${c.AbCompDac}`}>
@@ -31,10 +40,14 @@ const Hero = (p) => {
         <h4 className={c.noCrewS}>no data found for this month</h4>
       ) : (
         fd[0].data.map((m) => (
-          <div
-            className={`${c.rowData}`}
-          >
-            <div className={`${c.crEff}`}>
+          <div className={`${c.rowData}`}>
+            <div className={`${c.crEff}`} style={
+                p.type === "safety"
+                  ? { backgroundColor: "#6579E2" }
+                  : p.type === "lean"
+                  ? { backgroundColor: "#FFA211" }
+                  : {}
+              }>
               <span>{m.matricule}</span>
             </div>
             <div className={`${c.AbCompDac}`}>

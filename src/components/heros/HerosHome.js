@@ -23,12 +23,12 @@ const HerosHome = (p) => {
             />
           </span>
         </div>
-        <div className={c.employeeT} >
+        <div className={c.employeeT}>
           <span></span>
           <h1>quality hero</h1>
         </div>
         <Hero type="quality" month={month} />
-        <div className={c.employeeT}>
+        <div className={c.employeeT} style={{ marginTop: "16px" }}>
           <span></span>
           <h1>safety hero</h1>
         </div>
