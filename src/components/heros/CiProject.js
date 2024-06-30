@@ -26,8 +26,8 @@ const CiProject = (p) => {
       {fd.length === 0 ? (
         <h4 className={c.noCrewS}>no data found for this month</h4>
       ) : (
-        fd[0].data.map((m) => (
-          <div className={`${c.rowData}`}>
+        fd[0].data.map((m, i) => (
+          <div className={`${c.rowData}`} key={i}>
             <div
               className={`${c.crEff}`}
               style={{ backgroundColor: "#383942", width: "20%" }}
