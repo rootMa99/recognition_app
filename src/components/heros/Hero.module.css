@@ -1,0 +1,78 @@
+.rowData {
+  display: flex;
+  width: 100%;
+}
+
+.crEff,
+.AbCompDac {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  letter-spacing: 1px;
+}
+.crEff {
+  background-color: #006b63;
+  width: 30%;
+}
+.crEff span {
+  width: 50%;
+  text-transform: uppercase;
+  color: aliceblue;
+}
+.AbCompDac {
+  background-color: #e5e1da;
+  width: 70%;
+}
+.AbCompDac span {
+  width: 33.33%;
+  text-transform: uppercase;
+  color: black;
+}
+/* 
+  .first{
+      background-color: #006b63;
+    }
+    .first span{
+      color: aliceblue;
+    }
+    .firstacd {
+      background-color: #e5e1da;
+    }
+    .firstacd span {
+      color: black;
+    }
+     */
+.monthH input {
+  border-radius: 6px;
+  font-family: inherit;
+  border: 1px solid transparent;
+  color: #f84018;
+  background-color: transparent;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+  outline: none;
+}
+.monthH input[type="month"]::-webkit-calendar-picker-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 5px;
+  cursor: pointer;
+  background-color: #f84018;
+  padding: 5px;
+}
+.monthH input[type="month"]::-webkit-calendar-picker-indicator:hover {
+  transform: scale(1.2);
+  background-color: #fd7d61;
+}
+.noCrewS {
+  color: #c9c9c9;
+  text-transform: uppercase;
+}
+.pargi {
+  margin: 0;
+  font-size: small;
+  color: #ffa211;
+}

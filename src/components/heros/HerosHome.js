@@ -4,6 +4,7 @@ import { getMonth } from "../hooks/handyfn";
 
 const HerosHome = (p) => {
   const [month, setMonth] = useState(getMonth());
+  
   return (
     <div className={c.container}>
       <div className={c.title2}>
