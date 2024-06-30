@@ -78,5 +78,8 @@
   color: #ffa211;
 }
 
-
-.spanList
+.spanList ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
