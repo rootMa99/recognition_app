@@ -44,7 +44,15 @@ const CiProject = (p) => {
                 </ul>
               </span>
               <span style={{ width: "10%" }}>{m.saving}</span>
-              <span style={{ width: "50%" }}>{m.approach}</span>
+              <span
+                style={{
+                  width: "50%",
+                  textAlign: "start",
+                  textTransform: "capitalize",
+                }}
+              >
+                {m.approach}
+              </span>
             </div>
           </div>
         ))

@@ -1658,7 +1658,8 @@ export const PROJECTCI = [
         leader: "Ouassil",
         teamMembers: ["Anass", "Yazid"],
         saving: 400,
-        approach: "Implementing advanced image processing techniques",
+        approach:
+          "Development of an app to facilitate and improve the process of the recognition ceremony in the company",
       },
 
       {
