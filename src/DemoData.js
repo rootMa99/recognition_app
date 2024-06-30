@@ -1171,180 +1171,558 @@ export const SAFETYHERO = [
   },
 ];
 
-export const LEANHERO= [
+export const LEANHERO = [
   {
-    "month": "2024-01",
-    "data": [
+    month: "2024-01",
+    data: [
       {
-        "matricule": 3456,
-        "detection": 2,
-        "occurrence": 3,
-        "security": 4
+        matricule: 3456,
+        detection: 2,
+        occurrence: 3,
+        security: 4,
       },
       {
-        "matricule": 7890,
-        "detection": 4,
-        "occurrence": 1,
-        "security": 5
+        matricule: 7890,
+        detection: 4,
+        occurrence: 1,
+        security: 5,
       },
       {
-        "matricule": 1235,
-        "detection": 3,
-        "occurrence": 2,
-        "security": 1
+        matricule: 1235,
+        detection: 3,
+        occurrence: 2,
+        security: 1,
       },
       {
-        "matricule": 6789,
-        "detection": 5,
-        "occurrence": 4,
-        "security": 3
+        matricule: 6789,
+        detection: 5,
+        occurrence: 4,
+        security: 3,
       },
       {
-        "matricule": 4568,
-        "detection": 1,
-        "occurrence": 5,
-        "security": 2
-      }
-    ]
+        matricule: 4568,
+        detection: 1,
+        occurrence: 5,
+        security: 2,
+      },
+    ],
   },
   {
-    "month": "2024-02",
-    "data": [
+    month: "2024-02",
+    data: [
       {
-        "matricule": 2345,
-        "detection": 4,
-        "occurrence": 1,
-        "security": 3
+        matricule: 2345,
+        detection: 4,
+        occurrence: 1,
+        security: 3,
       },
       {
-        "matricule": 6780,
-        "detection": 3,
-        "occurrence": 5,
-        "security": 2
+        matricule: 6780,
+        detection: 3,
+        occurrence: 5,
+        security: 2,
       },
       {
-        "matricule": 5671,
-        "detection": 1,
-        "occurrence": 4,
-        "security": 5
+        matricule: 5671,
+        detection: 1,
+        occurrence: 4,
+        security: 5,
       },
       {
-        "matricule": 8902,
-        "detection": 2,
-        "occurrence": 3,
-        "security": 1
+        matricule: 8902,
+        detection: 2,
+        occurrence: 3,
+        security: 1,
       },
       {
-        "matricule": 7891,
-        "detection": 5,
-        "occurrence": 2,
-        "security": 4
-      }
-    ]
+        matricule: 7891,
+        detection: 5,
+        occurrence: 2,
+        security: 4,
+      },
+    ],
   },
   {
-    "month": "2024-03",
-    "data": [
+    month: "2024-03",
+    data: [
       {
-        "matricule": 5670,
-        "detection": 3,
-        "occurrence": 4,
-        "security": 2
+        matricule: 5670,
+        detection: 3,
+        occurrence: 4,
+        security: 2,
       },
       {
-        "matricule": 6781,
-        "detection": 4,
-        "occurrence": 1,
-        "security": 5
+        matricule: 6781,
+        detection: 4,
+        occurrence: 1,
+        security: 5,
       },
       {
-        "matricule": 8903,
-        "detection": 2,
-        "occurrence": 5,
-        "security": 3
+        matricule: 8903,
+        detection: 2,
+        occurrence: 5,
+        security: 3,
       },
       {
-        "matricule": 7892,
-        "detection": 1,
-        "occurrence": 3,
-        "security": 4
+        matricule: 7892,
+        detection: 1,
+        occurrence: 3,
+        security: 4,
       },
       {
-        "matricule": 5672,
-        "detection": 5,
-        "occurrence": 2,
-        "security": 1
-      }
-    ]
+        matricule: 5672,
+        detection: 5,
+        occurrence: 2,
+        security: 1,
+      },
+    ],
   },
   {
-    "month": "2024-04",
-    "data": [
+    month: "2024-04",
+    data: [
       {
-        "matricule": 6782,
-        "detection": 3,
-        "occurrence": 4,
-        "security": 5
+        matricule: 6782,
+        detection: 3,
+        occurrence: 4,
+        security: 5,
       },
       {
-        "matricule": 8904,
-        "detection": 1,
-        "occurrence": 5,
-        "security": 2
+        matricule: 8904,
+        detection: 1,
+        occurrence: 5,
+        security: 2,
       },
       {
-        "matricule": 7893,
-        "detection": 4,
-        "occurrence": 2,
-        "security": 1
+        matricule: 7893,
+        detection: 4,
+        occurrence: 2,
+        security: 1,
       },
       {
-        "matricule": 5673,
-        "detection": 5,
-        "occurrence": 3,
-        "security": 4
+        matricule: 5673,
+        detection: 5,
+        occurrence: 3,
+        security: 4,
       },
       {
-        "matricule": 6783,
-        "detection": 2,
-        "occurrence": 1,
-        "security": 3
-      }
-    ]
+        matricule: 6783,
+        detection: 2,
+        occurrence: 1,
+        security: 3,
+      },
+    ],
   },
   {
-    "month": "2024-05",
-    "data": [
+    month: "2024-05",
+    data: [
       {
-        "matricule": 8905,
-        "detection": 5,
-        "occurrence": 4,
-        "security": 3
+        matricule: 8905,
+        detection: 5,
+        occurrence: 4,
+        security: 3,
       },
       {
-        "matricule": 7894,
-        "detection": 1,
-        "occurrence": 3,
-        "security": 5
+        matricule: 7894,
+        detection: 1,
+        occurrence: 3,
+        security: 5,
       },
       {
-        "matricule": 5674,
-        "detection": 4,
-        "occurrence": 2,
-        "security": 1
+        matricule: 5674,
+        detection: 4,
+        occurrence: 2,
+        security: 1,
       },
       {
-        "matricule": 6784,
-        "detection": 2,
-        "occurrence": 5,
-        "security": 4
+        matricule: 6784,
+        detection: 2,
+        occurrence: 5,
+        security: 4,
       },
       {
-        "matricule": 8906,
-        "detection": 3,
-        "occurrence": 1,
-        "security": 2
-      }
-    ]
-  }
-]
+        matricule: 8906,
+        detection: 3,
+        occurrence: 1,
+        security: 2,
+      },
+    ],
+  },
+];
+
+export const PROJECTCI = [
+  {
+    month: "2024-01",
+    data: [
+      {
+        projectName: "Recognition",
+        leader: "Ouassil",
+        teamMembers: ["Anass", "Yazid"],
+        saving: 400,
+        approach: "Implementing advanced image processing techniques",
+      },
+      {
+        projectName: "Automation",
+        leader: "Fatima",
+        teamMembers: ["Khalid", "Sami"],
+        saving: 500,
+        approach: "Streamlining workflows with AI tools",
+      },
+      {
+        projectName: "Optimization",
+        leader: "Mehdi",
+        teamMembers: ["Laila", "Nour"],
+        saving: 600,
+        approach: "Enhancing data analysis methods",
+      },
+      {
+        projectName: "Digitization",
+        leader: "Rachid",
+        teamMembers: ["Yasmine", "Hamza"],
+        saving: 450,
+        approach: "Converting manual processes to digital",
+      },
+      {
+        projectName: "Sustainability",
+        leader: "Sara",
+        teamMembers: ["Amine", "Sofia"],
+        saving: 550,
+        approach: "Implementing eco-friendly practices",
+      },
+      {
+        projectName: "Innovation",
+        leader: "Hassan",
+        teamMembers: ["Omar", "Layla"],
+        saving: 620,
+        approach: "Developing new product features",
+      },
+      {
+        projectName: "Expansion",
+        leader: "Khadija",
+        teamMembers: ["Mohammed", "Nada"],
+        saving: 480,
+        approach: "Exploring new market opportunities",
+      },
+      {
+        projectName: "Integration",
+        leader: "Youssef",
+        teamMembers: ["Zineb", "Salma"],
+        saving: 700,
+        approach: "Combining systems for efficiency",
+      },
+      {
+        projectName: "Training",
+        leader: "Amina",
+        teamMembers: ["Ali", "Nadia"],
+        saving: 510,
+        approach: "Enhancing skills through workshops",
+      },
+      {
+        projectName: "Research",
+        leader: "Karim",
+        teamMembers: ["Mounir", "Rania"],
+        saving: 530,
+        approach: "Conducting in-depth market analysis",
+      },
+    ],
+  },
+  {
+    month: "2024-02",
+    data: [
+      {
+        projectName: "Security",
+        leader: "Othman",
+        teamMembers: ["Hiba", "Samir"],
+        saving: 470,
+        approach: "Implementing advanced security protocols",
+      },
+      {
+        projectName: "Customer Service",
+        leader: "Wafaa",
+        teamMembers: ["Ibrahim", "Sara"],
+        saving: 490,
+        approach: "Improving customer interaction methods",
+      },
+      {
+        projectName: "Compliance",
+        leader: "Ismail",
+        teamMembers: ["Farah", "Younes"],
+        saving: 610,
+        approach: "Ensuring adherence to regulations",
+      },
+      {
+        projectName: "Collaboration",
+        leader: "Samira",
+        teamMembers: ["Meryem", "Yassine"],
+        saving: 560,
+        approach: "Enhancing team collaboration tools",
+      },
+      {
+        projectName: "Sustainability",
+        leader: "Sara",
+        teamMembers: ["Amine", "Sofia"],
+        saving: 550,
+        approach: "Implementing eco-friendly practices",
+      },
+      {
+        projectName: "Expansion",
+        leader: "Khadija",
+        teamMembers: ["Mohammed", "Nada"],
+        saving: 480,
+        approach: "Exploring new market opportunities",
+      },
+      {
+        projectName: "Integration",
+        leader: "Youssef",
+        teamMembers: ["Zineb", "Salma"],
+        saving: 700,
+        approach: "Combining systems for efficiency",
+      },
+      {
+        projectName: "Training",
+        leader: "Amina",
+        teamMembers: ["Ali", "Nadia"],
+        saving: 510,
+        approach: "Enhancing skills through workshops",
+      },
+      {
+        projectName: "Research",
+        leader: "Karim",
+        teamMembers: ["Mounir", "Rania"],
+        saving: 530,
+        approach: "Conducting in-depth market analysis",
+      },
+      {
+        projectName: "Innovation",
+        leader: "Hassan",
+        teamMembers: ["Omar", "Layla"],
+        saving: 620,
+        approach: "Developing new product features",
+      },
+    ],
+  },
+  {
+    month: "2024-03",
+    data: [
+      {
+        projectName: "Automation",
+        leader: "Fatima",
+        teamMembers: ["Khalid", "Sami"],
+        saving: 500,
+        approach: "Streamlining workflows with AI tools",
+      },
+      {
+        projectName: "Optimization",
+        leader: "Mehdi",
+        teamMembers: ["Laila", "Nour"],
+        saving: 600,
+        approach: "Enhancing data analysis methods",
+      },
+      {
+        projectName: "Digitization",
+        leader: "Rachid",
+        teamMembers: ["Yasmine", "Hamza"],
+        saving: 450,
+        approach: "Converting manual processes to digital",
+      },
+      {
+        projectName: "Security",
+        leader: "Othman",
+        teamMembers: ["Hiba", "Samir"],
+        saving: 470,
+        approach: "Implementing advanced security protocols",
+      },
+      {
+        projectName: "Customer Service",
+        leader: "Wafaa",
+        teamMembers: ["Ibrahim", "Sara"],
+        saving: 490,
+        approach: "Improving customer interaction methods",
+      },
+      {
+        projectName: "Compliance",
+        leader: "Ismail",
+        teamMembers: ["Farah", "Younes"],
+        saving: 610,
+        approach: "Ensuring adherence to regulations",
+      },
+      {
+        projectName: "Collaboration",
+        leader: "Samira",
+        teamMembers: ["Meryem", "Yassine"],
+        saving: 560,
+        approach: "Enhancing team collaboration tools",
+      },
+      {
+        projectName: "Innovation",
+        leader: "Hassan",
+        teamMembers: ["Omar", "Layla"],
+        saving: 620,
+        approach: "Developing new product features",
+      },
+      {
+        projectName: "Expansion",
+        leader: "Khadija",
+        teamMembers: ["Mohammed", "Nada"],
+        saving: 480,
+        approach: "Exploring new market opportunities",
+      },
+      {
+        projectName: "Integration",
+        leader: "Youssef",
+        teamMembers: ["Zineb", "Salma"],
+        saving: 700,
+        approach: "Combining systems for efficiency",
+      },
+    ],
+  },
+  {
+    month: "2024-04",
+    data: [
+      {
+        projectName: "Training",
+        leader: "Amina",
+        teamMembers: ["Ali", "Nadia"],
+        saving: 510,
+        approach: "Enhancing skills through workshops",
+      },
+      {
+        projectName: "Research",
+        leader: "Karim",
+        teamMembers: ["Mounir", "Rania"],
+        saving: 530,
+        approach: "Conducting in-depth market analysis",
+      },
+      {
+        projectName: "Optimization",
+        leader: "Mehdi",
+        teamMembers: ["Laila", "Nour"],
+        saving: 600,
+        approach: "Enhancing data analysis methods",
+      },
+      {
+        projectName: "Digitization",
+        leader: "Rachid",
+        teamMembers: ["Yasmine", "Hamza"],
+        saving: 450,
+        approach: "Converting manual processes to digital",
+      },
+      {
+        projectName: "Sustainability",
+        leader: "Sara",
+        teamMembers: ["Amine", "Sofia"],
+        saving: 550,
+        approach: "Implementing eco-friendly practices",
+      },
+      {
+        projectName: "Innovation",
+        leader: "Hassan",
+        teamMembers: ["Omar", "Layla"],
+        saving: 620,
+        approach: "Developing new product features",
+      },
+      {
+        projectName: "Expansion",
+        leader: "Khadija",
+        teamMembers: ["Mohammed", "Nada"],
+        saving: 480,
+        approach: "Exploring new market opportunities",
+      },
+      {
+        projectName: "Integration",
+        leader: "Youssef",
+        teamMembers: ["Zineb", "Salma"],
+        saving: 700,
+        approach: "Combining systems for efficiency",
+      },
+      {
+        projectName: "Automation",
+        leader: "Fatima",
+        teamMembers: ["Khalid", "Sami"],
+        saving: 500,
+        approach: "Streamlining workflows with AI tools",
+      },
+      {
+        projectName: "Collaboration",
+        leader: "Samira",
+        teamMembers: ["Meryem", "Yassine"],
+        saving: 560,
+        approach: "Enhancing team collaboration tools",
+      },
+    ],
+  },
+  {
+    month: "2024-05",
+    data: [
+      {
+        projectName: "Customer Service",
+        leader: "Wafaa",
+        teamMembers: ["Ibrahim", "Sara"],
+        saving: 490,
+        approach: "Improving customer interaction methods",
+      },
+      {
+        projectName: "Compliance",
+        leader: "Ismail",
+        teamMembers: ["Farah", "Younes"],
+        saving: 610,
+        approach: "Ensuring adherence to regulations",
+      },
+      {
+        projectName: "Collaboration",
+        leader: "Samira",
+        teamMembers: ["Meryem", "Yassine"],
+        saving: 560,
+        approach: "Enhancing team collaboration tools",
+      },
+      {
+        projectName: "Training",
+        leader: "Amina",
+        teamMembers: ["Ali", "Nadia"],
+        saving: 510,
+        approach: "Enhancing skills through workshops",
+      },
+      {
+        projectName: "Research",
+        leader: "Karim",
+        teamMembers: ["Mounir", "Rania"],
+        saving: 530,
+        approach: "Conducting in-depth market analysis",
+      },
+      {
+        projectName: "Sustainability",
+        leader: "Sara",
+        teamMembers: ["Amine", "Sofia"],
+        saving: 550,
+        approach: "Implementing eco-friendly practices",
+      },
+      {
+        projectName: "Optimization",
+        leader: "Mehdi",
+        teamMembers: ["Laila", "Nour"],
+        saving: 600,
+        approach: "Enhancing data analysis methods",
+      },
+      {
+        projectName: "Digitization",
+        leader: "Rachid",
+        teamMembers: ["Yasmine", "Hamza"],
+        saving: 450,
+        approach: "Converting manual processes to digital",
+      },
+      {
+        projectName: "Innovation",
+        leader: "Hassan",
+        teamMembers: ["Omar", "Layla"],
+        saving: 620,
+        approach: "Developing new product features",
+      },
+      {
+        projectName: "Expansion",
+        leader: "Khadija",
+        teamMembers: ["Mohammed", "Nada"],
+        saving: 480,
+        approach: "Exploring new market opportunities",
+      },
+    ],
+  },
+];

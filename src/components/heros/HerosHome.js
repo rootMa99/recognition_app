@@ -2,6 +2,7 @@ import { useState } from "react";
 import c from "./HerosHome.module.css";
 import { getMonth } from "../hooks/handyfn";
 import Hero from "./Hero";
+import CiProject from "./CiProject";
 
 const HerosHome = (p) => {
   const [month, setMonth] = useState(getMonth());
@@ -38,6 +39,11 @@ const HerosHome = (p) => {
           <h1>lean hero</h1>
         </div>
         <Hero type="lean" month={month} />
+        <div className={c.employeeT} style={{ marginTop: "16px" }}>
+          <span></span>
+          <h1>ci project</h1>
+        </div>
+        <CiProject month={month}/>
       </div>
     </div>
   );

@@ -9,6 +9,7 @@
   justify-content: space-evenly;
   padding: 10px 0;
   letter-spacing: 1px;
+  align-items: center;
 }
 .crEff {
   background-color: #006b63;
@@ -76,3 +77,6 @@
   font-size: small;
   color: #ffa211;
 }
+
+
+.spanList
