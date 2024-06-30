@@ -1,10 +1,11 @@
 import { useState } from "react";
 import c from "./HerosHome.module.css";
 import { getMonth } from "../hooks/handyfn";
+import Hero from "./Hero";
 
 const HerosHome = (p) => {
   const [month, setMonth] = useState(getMonth());
-  
+
   return (
     <div className={c.container}>
       <div className={c.title2}>
@@ -26,6 +27,7 @@ const HerosHome = (p) => {
           <span></span>
           <h1>quality hero</h1>
         </div>
+        <Hero type="quality" month={month} />
       </div>
     </div>
   );
