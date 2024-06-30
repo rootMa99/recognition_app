@@ -43,7 +43,7 @@ const HerosHome = (p) => {
           <span></span>
           <h1>ci project</h1>
         </div>
-        <CiProject month={month}/>
+        <CiProject month={month} />
       </div>
     </div>
   );
