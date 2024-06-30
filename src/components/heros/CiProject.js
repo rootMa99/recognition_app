@@ -38,8 +38,8 @@ const CiProject = (p) => {
               <span style={{ width: "20%" }}>{m.leader} </span>
               <span style={{ width: "20%" }} className={c.spanList}>
                 <ul>
-                  {m.teamMembers.map((m) => (
-                    <li>{m}</li>
+                  {m.teamMembers.map((m, i) => (
+                    <li key={`${i}id`}>{m}</li>
                   ))}
                 </ul>
               </span>
