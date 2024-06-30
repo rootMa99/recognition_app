@@ -1705,7 +1705,7 @@ export const PROJECTCI = [
         approach: "Enhancing data analysis methods",
       },
       {
-        projectName: "Digitization",
+        projectName: "Digitalization",
         leader: "Rachid",
         teamMembers: ["Yasmine", "Hamza"],
         saving: 450,
