@@ -1665,7 +1665,7 @@ export const PROJECTCI = [
       {
         projectName: "Compliance",
         leader: "Ismail",
-        teamMembers: ["Farah", "Younes"],
+        teamMembers: ["Farah", "Younes", "Yassine"],
         saving: 610,
         approach: "Ensuring adherence to regulations",
       },

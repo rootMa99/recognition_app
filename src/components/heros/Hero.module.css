@@ -80,6 +80,7 @@
 
 .spanList ul {
   margin: 0;
-  list-style: none;
+  list-style: upper-roman;
   padding: 0;
+  text-align: start !important;
 }
