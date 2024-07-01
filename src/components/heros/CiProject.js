@@ -14,7 +14,7 @@ const CiProject = (p) => {
           className={`${c.crEff}`}
           style={{ backgroundColor: "#383942", width: "20%" }}
         >
-          <span>projectName</span>
+          <span>project Name</span>
         </div>
         <div className={`${c.AbCompDac}`} style={{ width: "80%" }}>
           <span style={{ width: "20%" }}>leader </span>
