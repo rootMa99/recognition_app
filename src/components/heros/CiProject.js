@@ -18,7 +18,7 @@ const CiProject = (p) => {
         </div>
         <div className={`${c.AbCompDac}`} style={{ width: "80%" }}>
           <span style={{ width: "20%" }}>leader </span>
-          <span style={{ width: "20%" }}>teamMembers</span>
+          <span style={{ width: "20%" }}>team Members</span>
           <span style={{ width: "10%" }}>saving</span>
           <span style={{ width: "50%" }}>approach</span>
         </div>
