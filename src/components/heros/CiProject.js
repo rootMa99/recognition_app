@@ -22,7 +22,6 @@ const CiProject = (p) => {
           <span style={{ width: "10%" }}>saving</span>
           <span style={{ width: "50%" }}>approach</span>
         </div>
-        
       </div>
       {fd.length === 0 ? (
         <h4 className={c.noCrewS}>no data found for this month</h4>
