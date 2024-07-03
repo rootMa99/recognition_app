@@ -22,7 +22,7 @@ const Hero = (p) => {
           className={`${c.crEff}`}
           style={
             p.type === "safety"
-              ? { backgroundColor: "#6579E2" }
+              ? { backgroundColor: "#006b63" }
               : p.type === "lean"
               ? { backgroundColor: "#FFA211" }
               : {}
@@ -45,7 +45,7 @@ const Hero = (p) => {
               className={`${c.crEff}`}
               style={
                 p.type === "safety"
-                  ? { backgroundColor: "#6579E2" }
+                  ? { backgroundColor: "#006b63" }
                   : p.type === "lean"
                   ? { backgroundColor: "#FFA211" }
                   : {}
