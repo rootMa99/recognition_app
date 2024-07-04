@@ -1,19 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import c from "./Hero.module.css";
 import { LEANHERO, QUALITYHERO, SAFETYHERO } from "../../DemoData";
-const Hero = (p) => {
+
+const Hero = ({ type, month }) => {
   const data =
-    p.type === "quality"
+    type === "quality"
       ? QUALITYHERO
-      : p.type === "safety"
+      : type === "safety"
       ? SAFETYHERO
-      : p.type === "lean"
+      : type === "lean"
       ? LEANHERO
       : [];
-  const fd = data.filter((f) => f.month === p.month);
+  const fd = data.filter((f) => f.month === month);
 
   const initialRatings = fd.length > 0 ? fd[0].data.map(() => 0) : [];
   const [ratings, setRatings] = useState(initialRatings);
+
+  useEffect(() => {
+    const initialRatings = fd.length > 0 ? fd[0].data.map(() => 0) : [];
+    setRatings(initialRatings);
+  }, [month, type]);
 
   const handleRatingChange = (index, value) => {
     const newRatings = [...ratings];
@@ -30,9 +36,9 @@ const Hero = (p) => {
         <div
           className={`${c.crEff}`}
           style={
-            p.type === "safety"
+            type === "safety"
               ? { backgroundColor: "#006b63" }
-              : p.type === "lean"
+              : type === "lean"
               ? { backgroundColor: "#FFA211" }
               : {}
           }
@@ -54,9 +60,9 @@ const Hero = (p) => {
             <div
               className={`${c.crEff}`}
               style={
-                p.type === "safety"
+                type === "safety"
                   ? { backgroundColor: "#006b63" }
-                  : p.type === "lean"
+                  : type === "lean"
                   ? { backgroundColor: "#FFA211" }
                   : {}
               }
@@ -123,4 +129,5 @@ const Hero = (p) => {
     </React.Fragment>
   );
 };
+
 export default Hero;
