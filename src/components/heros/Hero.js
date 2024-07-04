@@ -40,7 +40,8 @@ const Hero = (p) => {
         <div className={`${c.AbCompDac}`}>
           <span>detection </span>
           <span>occurrence</span>
-          <span>security</span>
+          <span>severity</span>
+          <span>rating</span>
         </div>
       </div>
       {fd.length === 0 ? (
