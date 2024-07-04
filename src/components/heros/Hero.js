@@ -3,7 +3,6 @@ import c from "./Hero.module.css";
 import { LEANHERO, QUALITYHERO, SAFETYHERO } from "../../DemoData";
 
 const Hero = (p) => {
-
   const [rating, setRating] = useState(0);
 
   const handleRatingChange = (e) => {
@@ -65,6 +64,50 @@ const Hero = (p) => {
               <span>{m.detection} </span>
               <span>{m.occurrence}</span>
               <span>{m.security}</span>
+              <span>
+                <div className={c.rating}>
+                  <input
+                    value="5"
+                    name="rating"
+                    id="star5"
+                    type="radio"
+                    onChange={handleRatingChange}
+                  />
+                  <label htmlFor="star5"></label>
+                  <input
+                    value="4"
+                    name="rating"
+                    id="star4"
+                    type="radio"
+                    onChange={handleRatingChange}
+                  />
+                  <label htmlFor="star4"></label>
+                  <input
+                    value="3"
+                    name="rating"
+                    id="star3"
+                    type="radio"
+                    onChange={handleRatingChange}
+                  />
+                  <label htmlFor="star3"></label>
+                  <input
+                    value="2"
+                    name="rating"
+                    id="star2"
+                    type="radio"
+                    onChange={handleRatingChange}
+                  />
+                  <label htmlFor="star2"></label>
+                  <input
+                    value="1"
+                    name="rating"
+                    id="star1"
+                    type="radio"
+                    onChange={handleRatingChange}
+                  />
+                  <label htmlFor="star1"></label>
+                </div>
+              </span>
             </div>
           </div>
         ))

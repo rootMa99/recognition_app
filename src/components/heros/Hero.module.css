@@ -85,3 +85,31 @@
   padding: 0;
   text-align: start !important;
 }
+
+
+.rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  float: right;
+  cursor: pointer;
+  color: #070707;
+  transition: color 0.3s;
+}
+
+.rating label:before {
+  content: '\2605';
+  font-size: 30px;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: #FFA211;
+  transition: color 0.3s;
+}
