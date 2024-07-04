@@ -26,53 +26,52 @@ const MpcHome = (p) => {
         </div>
       </div>
       <div
-      className={`${c.rowData}`}
-      style={{ borderBottom: "1px solid #4E7C88" }}
-    >
-      <div className={`${c.crEff} ${c.first}`}>
-        <span>crew</span>
-      </div>
-      <div className={`${c.AbCompDac} ${c.firstacd}`}>
-        <span>
-          abssenteism
-          <br />
-          <p className={c.pargi}>act | tar</p>
-        </span>
-        <span>
-          Custmer complain
-          <br />
-          <p className={c.pargi}>act | tar</p>
-        </span>
-        <span>
-          daily kaizen
-          <br />
-          <p className={c.pargi}>act | tar</p>
-        </span>
-      </div>
-    </div>
-    {data.length > 0 ? (
-      data[0].data.map((m) => (
-        <div className={c.rowData}>
-          <div className={c.crEff}>
-            <span>{m.matricule}</span>
-          </div>
-          <div className={c.AbCompDac}>
-            <span>
-              {m.abs.act} | {m.abs.target}
-            </span>
-            <span>
-              {m.cc.act} | {m.cc.target}{" "}
-            </span>
-            <span>
-              {m.dailyKaizen.act} | {m.dailyKaizen.target}
-            </span>
-          </div>
+        className={`${c.rowData}`}
+        style={{ borderBottom: "1px solid #4E7C88" }}
+      >
+        <div className={`${c.crEff} ${c.first}`}>
+          <span>crew</span>
         </div>
-      ))
-    ) : (
-      <h4 className={c.noCrewS}>no data found for this month</h4>
-    )}
- 
+        <div className={`${c.AbCompDac} ${c.firstacd}`}>
+          <span>
+            abssenteism
+            <br />
+            <p className={c.pargi}>act | tar</p>
+          </span>
+          <span>
+            Custmer complain
+            <br />
+            <p className={c.pargi}>act | tar</p>
+          </span>
+          <span>
+            daily kaizen
+            <br />
+            <p className={c.pargi}>act | tar</p>
+          </span>
+        </div>
+      </div>
+      {data.length > 0 ? (
+        data[0].data.map((m) => (
+          <div className={c.rowData}>
+            <div className={c.crEff}>
+              <span>{m.matricule}</span>
+            </div>
+            <div className={c.AbCompDac}>
+              <span>
+                {m.dciwmse} | {m.dciwmseTarget}
+              </span>
+              <span>
+                {m.workload} | {m.workloadTarget}
+              </span>
+              <span>
+                {m.dailyKaizen} | {m.dailyKaizenTarget}
+              </span>
+            </div>
+          </div>
+        ))
+      ) : (
+        <h4 className={c.noCrewS}>no data found for this month</h4>
+      )}
     </div>
   );
 };
