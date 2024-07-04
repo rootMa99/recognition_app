@@ -1,10 +1,10 @@
-import { useState } from "react";
+import React, { useState } from 'react';
 import c from "./HerosHome.module.css";
 import { getMonth } from "../hooks/handyfn";
 import Hero from "./Hero";
 import CiProject from "./CiProject";
 
-const HerosHome = (p) => {
+const HerosHome = () => {
   const [month, setMonth] = useState(getMonth());
 
   return (
@@ -48,4 +48,5 @@ const HerosHome = (p) => {
     </div>
   );
 };
+
 export default HerosHome;
