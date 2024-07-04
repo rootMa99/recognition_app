@@ -60,8 +60,8 @@
   letter-spacing: 1px;
 }
 .crEff {
-  background-color: #006b63;
-  width: 30%;
+  background-color: #012669;
+  width: 15%;
 }
 .crEff span {
   width: 50%;
@@ -70,10 +70,10 @@
 }
 .AbCompDac {
   background-color: #e5e1da;
-  width: 70%;
+  width: 85%;
 }
 .AbCompDac span {
-  width: 33.33%;
+  width: 25%;
   text-transform: uppercase;
   color: black;
 }
@@ -123,5 +123,5 @@
 .pargi {
   margin: 0;
   font-size: small;
-  color: #ffa211;
+  color: #012669;
 }

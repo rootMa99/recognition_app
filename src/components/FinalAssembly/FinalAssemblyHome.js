@@ -30,12 +30,12 @@ const FinalAssemblyHome = (p) => {
         >
           <div className={`${c.crEff} ${c.first}`}>
             <span>crew</span>
+          </div>
+          <div className={`${c.AbCompDac} ${c.firstacd}`}>
             <span>
               efficiency <br />
               <p className={c.pargi}>act | tar</p>
             </span>
-          </div>
-          <div className={`${c.AbCompDac} ${c.firstacd}`}>
             <span>
               abssenteism
               <br />
@@ -58,16 +58,16 @@ const FinalAssemblyHome = (p) => {
             <div className={c.rowData}>
               <div className={c.crEff}>
                 <span>{m.crew}</span>
+              </div>
+              <div className={c.AbCompDac}>
                 <span>
                   {m.efficiency.act}% | {m.efficiency.target}%
                 </span>
-              </div>
-              <div className={c.AbCompDac}>
                 <span>
                   {m.abs.act} | {m.abs.target}
                 </span>
                 <span>
-                  {m.cc.act} | {m.cc.target}{" "}
+                  {m.cc.act} | {m.cc.target}
                 </span>
                 <span>
                   {m.dailyKaizen.act} | {m.dailyKaizen.target}
