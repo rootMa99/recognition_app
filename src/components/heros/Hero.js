@@ -13,11 +13,11 @@ const Hero = ({ type, month }) => {
       : [];
   const fd = data.filter((f) => f.month === month);
 
-  const initialRatings = fd.length > 0 ? fd[0].data.map(() => 0) : [];
+  const initialRatings = fd.length > 0 ? fd[0].data.map(item => item.rating || 0) : [];
   const [ratings, setRatings] = useState(initialRatings);
 
   useEffect(() => {
-    const initialRatings = fd.length > 0 ? fd[0].data.map(() => 0) : [];
+    const initialRatings = fd.length > 0 ? fd[0].data.map(item => item.rating || 0) : [];
     setRatings(initialRatings);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [month, type, fd.length]);
@@ -26,6 +26,7 @@ const Hero = ({ type, month }) => {
     const newRatings = [...ratings];
     newRatings[index] = value;
     setRatings(newRatings);
+    fd[0].data[index].rating = value; 
   };
 
   return (
