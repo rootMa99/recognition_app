@@ -60,13 +60,13 @@
   letter-spacing: 1px;
 }
 .crEff {
-  background-color: #006b63;
+  background-color: #929d96;
   width: 15%;
 }
 .crEff span {
   width: 50%;
   text-transform: uppercase;
-  color: aliceblue;
+  color: rgb(0, 45, 85);
 }
 .AbCompDac {
   background-color: #e5e1da;
@@ -143,7 +143,7 @@
   align-items: center;
 }
 .rowDatab {
-  background-color: #929d96;
+  background-color: #e5e1da;
   width: 10%;
 }
 .rowDatab span {

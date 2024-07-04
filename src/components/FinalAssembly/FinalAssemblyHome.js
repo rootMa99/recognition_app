@@ -34,22 +34,22 @@ const FinalAssemblyHome = (p) => {
           <div className={`${c.AbCompDac} ${c.firstacd}`}>
             <span>
               efficiency <br />
-              <p className={c.pargi}>act | tar</p>
+              <p className={c.pargi}>actual | target</p>
             </span>
             <span>
               abssenteism
               <br />
-              <p className={c.pargi}>act | tar</p>
+              <p className={c.pargi}>actual | target</p>
             </span>
             <span>
               Custmer complain
               <br />
-              <p className={c.pargi}>act | tar</p>
+              <p className={c.pargi}>actual | target</p>
             </span>
             <span>
               daily kaizen
               <br />
-              <p className={c.pargi}>act | tar</p>
+              <p className={c.pargi}>actual | target</p>
             </span>
           </div>
         </div>
