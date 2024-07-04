@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import c from "./Hero.module.css";
 import { LEANHERO, QUALITYHERO, SAFETYHERO } from "../../DemoData";
 
 const Hero = (p) => {
+
+  const [rating, setRating] = useState(0);
+
+  const handleRatingChange = (e) => {
+    setRating(e.target.value);
+  };
+
   const data =
     p.type === "quality"
       ? QUALITYHERO
