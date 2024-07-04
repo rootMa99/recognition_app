@@ -1,14 +1,7 @@
 import React, { useState } from "react";
 import c from "./Hero.module.css";
 import { LEANHERO, QUALITYHERO, SAFETYHERO } from "../../DemoData";
-
 const Hero = (p) => {
-  const [rating, setRating] = useState(0);
-
-  const handleRatingChange = (e) => {
-    setRating(e.target.value);
-  };
-
   const data =
     p.type === "quality"
       ? QUALITYHERO
@@ -18,6 +11,16 @@ const Hero = (p) => {
       ? LEANHERO
       : [];
   const fd = data.filter((f) => f.month === p.month);
+
+  const initialRatings = fd.length > 0 ? fd[0].data.map(() => 0) : [];
+  const [ratings, setRatings] = useState(initialRatings);
+
+  const handleRatingChange = (index, value) => {
+    const newRatings = [...ratings];
+    newRatings[index] = value;
+    setRatings(newRatings);
+  };
+
   return (
     <React.Fragment>
       <div
@@ -68,44 +71,49 @@ const Hero = (p) => {
                 <div className={c.rating}>
                   <input
                     value="5"
-                    name="rating"
-                    id="star5"
+                    name={`rating-${i}`}
+                    id={`star5-${i}`}
                     type="radio"
-                    onChange={handleRatingChange}
+                    checked={ratings[i] === 5}
+                    onChange={() => handleRatingChange(i, 5)}
                   />
-                  <label htmlFor="star5"></label>
+                  <label htmlFor={`star5-${i}`}></label>
                   <input
                     value="4"
-                    name="rating"
-                    id="star4"
+                    name={`rating-${i}`}
+                    id={`star4-${i}`}
                     type="radio"
-                    onChange={handleRatingChange}
+                    checked={ratings[i] === 4}
+                    onChange={() => handleRatingChange(i, 4)}
                   />
-                  <label htmlFor="star4"></label>
+                  <label htmlFor={`star4-${i}`}></label>
                   <input
                     value="3"
-                    name="rating"
-                    id="star3"
+                    name={`rating-${i}`}
+                    id={`star3-${i}`}
                     type="radio"
-                    onChange={handleRatingChange}
+                    checked={ratings[i] === 3}
+                    onChange={() => handleRatingChange(i, 3)}
                   />
-                  <label htmlFor="star3"></label>
+                  <label htmlFor={`star3-${i}`}></label>
                   <input
                     value="2"
-                    name="rating"
-                    id="star2"
+                    name={`rating-${i}`}
+                    id={`star2-${i}`}
                     type="radio"
-                    onChange={handleRatingChange}
+                    checked={ratings[i] === 2}
+                    onChange={() => handleRatingChange(i, 2)}
                   />
-                  <label htmlFor="star2"></label>
+                  <label htmlFor={`star2-${i}`}></label>
                   <input
                     value="1"
-                    name="rating"
-                    id="star1"
+                    name={`rating-${i}`}
+                    id={`star1-${i}`}
                     type="radio"
-                    onChange={handleRatingChange}
+                    checked={ratings[i] === 1}
+                    onChange={() => handleRatingChange(i, 1)}
                   />
-                  <label htmlFor="star1"></label>
+                  <label htmlFor={`star1-${i}`}></label>
                 </div>
               </span>
             </div>
@@ -115,5 +123,4 @@ const Hero = (p) => {
     </React.Fragment>
   );
 };
-
 export default Hero;
