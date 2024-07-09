@@ -14,6 +14,7 @@ const Hero = ({ type, month }) => {
   const fd = data.filter((f) => f.month === month);
 
   const initialRatings = fd.length > 0 ? fd[0].data.map(item => item.rating || 0) : [];
+  console.log(initialRatings)
   const [ratings, setRatings] = useState(initialRatings);
 
   useEffect(() => {
