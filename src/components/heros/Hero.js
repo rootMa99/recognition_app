@@ -13,29 +13,28 @@ const Hero = ({ type, month }) => {
       : [];
   const fd = data.filter((f) => f.month === month);
 
-  const initialRatings = fd.length > 0 ? fd[0].data.map(item => item.rating || 0) : [];
-  console.log(initialRatings)
+  const initialRatings =
+    fd.length > 0 ? fd[0].data.map((item) => item.rating || 0) : [];
+  console.log(initialRatings);
   const [ratings, setRatings] = useState(initialRatings);
 
   useEffect(() => {
-    const initialRatings = fd.length > 0 ? fd[0].data.map(item => item.rating || 0) : [];
+    const initialRatings =
+      fd.length > 0 ? fd[0].data.map((item) => item.rating || 0) : [];
     setRatings(initialRatings);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [month, type, fd.length]);
 
   const handleRatingChange = (index, value) => {
     const newRatings = [...ratings];
     newRatings[index] = value;
     setRatings(newRatings);
-    fd[0].data[index].rating = value; 
+    fd[0].data[index].rating = value;
   };
 
   return (
     <React.Fragment>
-      <div
-        className={c.rowData}
-        style={{ borderBottom: "1px solid #4E7C88" }}
-      >
+      <div className={c.rowData} style={{ borderBottom: "1px solid #4E7C88" }}>
         <div
           className={c.crEff}
           style={
