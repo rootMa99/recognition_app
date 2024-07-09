@@ -86,7 +86,6 @@
   text-align: start !important;
 }
 
-
 .rating {
   display: inline-block;
 }
@@ -103,13 +102,13 @@
 }
 
 .rating label:before {
-  content: '\2605';
+  content: "\2605";
   font-size: 30px;
 }
 
 .rating input:checked ~ label,
 .rating label:hover,
 .rating label:hover ~ label {
-  color: #FFA211;
+  color: #ffa211;
   transition: color 0.3s;
 }
