@@ -39,9 +39,9 @@ const Hero = ({ type, month }) => {
           className={c.crEff}
           style={
             type === "safety"
-              ? { backgroundColor: "#006b63" }
+              ? { backgroundColor: "#D9F28B" }
               : type === "lean"
-              ? { backgroundColor: "#FFA211" }
+              ? { backgroundColor: "#006B63" }
               : {}
           }
         >
@@ -69,9 +69,9 @@ const Hero = ({ type, month }) => {
               className={c.crEff}
               style={
                 type === "safety"
-                  ? { backgroundColor: "#006b63" }
+                  ? { backgroundColor: "#D9F28B" }
                   : type === "lean"
-                  ? { backgroundColor: "#FFA211" }
+                  ? { backgroundColor: "#006B63" }
                   : {}
               }
             >

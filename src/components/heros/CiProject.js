@@ -30,7 +30,7 @@ const CiProject = (p) => {
       >
         <div
           className={`${c.crEff}`}
-          style={{ backgroundColor: "#383942", width: "20%" }}
+          style={{ backgroundColor: "#00AC9E", width: "20%" }}
         >
           <span>project Name</span>
         </div>
@@ -49,7 +49,7 @@ const CiProject = (p) => {
           <div className={`${c.rowData}`} key={i}>
             <div
               className={`${c.crEff}`}
-              style={{ backgroundColor: "#383942", width: "20%" }}
+              style={{ backgroundColor: "#00AC9E", width: "20%" }}
             >
               <span>{m.projectName}</span>
             </div>
