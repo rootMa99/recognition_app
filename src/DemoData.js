@@ -943,6 +943,7 @@ export const QUALITYHERO = [
         occurrence: 2,
         security: 3,
         rating: 3,
+        issue: "Implementing Advanced Security Protocols",
       },
       {
         matricule: 1234,
@@ -950,6 +951,7 @@ export const QUALITYHERO = [
         occurrence: 1,
         security: 4,
         rating: 4,
+        issue: "Enhancing Detection Systems",
       },
       {
         matricule: 5678,
@@ -957,6 +959,7 @@ export const QUALITYHERO = [
         occurrence: 4,
         security: 5,
         rating: 2,
+        issue: "Occurrence Reduction Strategies",
       },
       {
         matricule: 4321,
@@ -964,6 +967,7 @@ export const QUALITYHERO = [
         occurrence: 3,
         security: 1,
         rating: 5,
+        issue: "Improving Security Measures",
       },
       {
         matricule: 8765,
@@ -971,6 +975,7 @@ export const QUALITYHERO = [
         occurrence: 5,
         security: 2,
         rating: 1,
+        issue: "Detection Enhancement Plans",
       },
     ],
   },
@@ -983,6 +988,7 @@ export const QUALITYHERO = [
         occurrence: 2,
         security: 5,
         rating: 3,
+        issue: "Advanced Security Implementation",
       },
       {
         matricule: 7890,
@@ -990,6 +996,7 @@ export const QUALITYHERO = [
         occurrence: 1,
         security: 3,
         rating: 4,
+        issue: "Enhancing Detection Capabilities",
       },
       {
         matricule: 4567,
@@ -997,6 +1004,7 @@ export const QUALITYHERO = [
         occurrence: 3,
         security: 4,
         rating: 2,
+        issue: "Reducing Occurrence Frequency",
       },
       {
         matricule: 8901,
@@ -1004,6 +1012,7 @@ export const QUALITYHERO = [
         occurrence: 4,
         security: 1,
         rating: 5,
+        issue: "Security Improvement Initiatives",
       },
       {
         matricule: 5670,
@@ -1011,6 +1020,7 @@ export const QUALITYHERO = [
         occurrence: 5,
         security: 2,
         rating: 1,
+        issue: "Detection System Upgrades",
       },
     ],
   },
@@ -1023,6 +1033,7 @@ export const QUALITYHERO = [
         occurrence: 1,
         security: 4,
         rating: 2,
+        issue: "Security Protocol Implementation",
       },
       {
         matricule: 7891,
@@ -1030,6 +1041,7 @@ export const QUALITYHERO = [
         occurrence: 5,
         security: 2,
         rating: 3,
+        issue: "Detection Enhancement",
       },
       {
         matricule: 8902,
@@ -1037,6 +1049,7 @@ export const QUALITYHERO = [
         occurrence: 2,
         security: 3,
         rating: 4,
+        issue: "Occurrence Reduction",
       },
       {
         matricule: 5671,
@@ -1044,6 +1057,7 @@ export const QUALITYHERO = [
         occurrence: 4,
         security: 5,
         rating: 1,
+        issue: "Security Improvement",
       },
       {
         matricule: 6781,
@@ -1051,6 +1065,7 @@ export const QUALITYHERO = [
         occurrence: 3,
         security: 1,
         rating: 5,
+        issue: "Detection System Improvement",
       },
     ],
   },
@@ -1063,6 +1078,7 @@ export const QUALITYHERO = [
         occurrence: 5,
         security: 2,
         rating: 4,
+        issue: "Advanced Security Protocols",
       },
       {
         matricule: 8903,
@@ -1070,6 +1086,7 @@ export const QUALITYHERO = [
         occurrence: 1,
         security: 4,
         rating: 3,
+        issue: "Detection Capability Enhancement",
       },
       {
         matricule: 5672,
@@ -1077,6 +1094,7 @@ export const QUALITYHERO = [
         occurrence: 3,
         security: 5,
         rating: 2,
+        issue: "Reducing Occurrence Frequency",
       },
       {
         matricule: 6782,
@@ -1084,6 +1102,7 @@ export const QUALITYHERO = [
         occurrence: 4,
         security: 3,
         rating: 1,
+        issue: "Improving Security Measures",
       },
       {
         matricule: 7893,
@@ -1091,6 +1110,7 @@ export const QUALITYHERO = [
         occurrence: 2,
         security: 1,
         rating: 5,
+        issue: "Detection System Upgrades",
       },
     ],
   },
@@ -1103,6 +1123,7 @@ export const QUALITYHERO = [
         occurrence: 4,
         security: 2,
         rating: 3,
+        issue: "Implementing Security Enhancements",
       },
       {
         matricule: 5673,
@@ -1110,6 +1131,7 @@ export const QUALITYHERO = [
         occurrence: 1,
         security: 5,
         rating: 4,
+        issue: "Improving Detection Systems",
       },
       {
         matricule: 6783,
@@ -1117,6 +1139,7 @@ export const QUALITYHERO = [
         occurrence: 5,
         security: 3,
         rating: 2,
+        issue: "Occurrence Reduction Strategies",
       },
       {
         matricule: 7894,
@@ -1124,6 +1147,7 @@ export const QUALITYHERO = [
         occurrence: 2,
         security: 1,
         rating: 5,
+        issue: "Enhancing Security Measures",
       },
       {
         matricule: 8905,
@@ -1131,10 +1155,12 @@ export const QUALITYHERO = [
         occurrence: 3,
         security: 4,
         rating: 1,
+        issue: "Detection Enhancement",
       },
     ],
   },
 ];
+
 
 export const SAFETYHERO = [
   {
@@ -1146,6 +1172,7 @@ export const SAFETYHERO = [
         occurrence: 3,
         security: 4,
         rating: 3,
+        issue: "Enhancing Skills Through Workshops",
       },
       {
         matricule: 7890,
@@ -1153,6 +1180,7 @@ export const SAFETYHERO = [
         occurrence: 1,
         security: 5,
         rating: 4,
+        issue: "Implementing Advanced Safety Measures",
       },
       {
         matricule: 1235,
@@ -1160,6 +1188,7 @@ export const SAFETYHERO = [
         occurrence: 2,
         security: 1,
         rating: 2,
+        issue: "Improving Detection Accuracy",
       },
       {
         matricule: 6789,
@@ -1167,6 +1196,7 @@ export const SAFETYHERO = [
         occurrence: 4,
         security: 3,
         rating: 5,
+        issue: "Reducing Incident Occurrences",
       },
       {
         matricule: 4568,
@@ -1174,6 +1204,7 @@ export const SAFETYHERO = [
         occurrence: 5,
         security: 2,
         rating: 1,
+        issue: "Enhancing Security Protocols",
       },
     ],
   },
@@ -1186,6 +1217,7 @@ export const SAFETYHERO = [
         occurrence: 1,
         security: 3,
         rating: 4,
+        issue: "Conducting Safety Workshops",
       },
       {
         matricule: 6780,
@@ -1193,6 +1225,7 @@ export const SAFETYHERO = [
         occurrence: 5,
         security: 2,
         rating: 3,
+        issue: "Improving Incident Detection",
       },
       {
         matricule: 5671,
@@ -1200,6 +1233,7 @@ export const SAFETYHERO = [
         occurrence: 4,
         security: 5,
         rating: 1,
+        issue: "Enhancing Safety Protocols",
       },
       {
         matricule: 8902,
@@ -1207,6 +1241,7 @@ export const SAFETYHERO = [
         occurrence: 3,
         security: 1,
         rating: 2,
+        issue: "Reducing Security Risks",
       },
       {
         matricule: 7891,
@@ -1214,6 +1249,7 @@ export const SAFETYHERO = [
         occurrence: 2,
         security: 4,
         rating: 5,
+        issue: "Implementing Advanced Safety Measures",
       },
     ],
   },
@@ -1226,6 +1262,7 @@ export const SAFETYHERO = [
         occurrence: 4,
         security: 2,
         rating: 3,
+        issue: "Enhancing Skills Through Workshops",
       },
       {
         matricule: 6781,
@@ -1233,6 +1270,7 @@ export const SAFETYHERO = [
         occurrence: 1,
         security: 5,
         rating: 4,
+        issue: "Improving Detection Systems",
       },
       {
         matricule: 8903,
@@ -1240,6 +1278,7 @@ export const SAFETYHERO = [
         occurrence: 5,
         security: 3,
         rating: 2,
+        issue: "Reducing Incident Occurrences",
       },
       {
         matricule: 7892,
@@ -1247,6 +1286,7 @@ export const SAFETYHERO = [
         occurrence: 3,
         security: 4,
         rating: 1,
+        issue: "Enhancing Security Protocols",
       },
       {
         matricule: 5672,
@@ -1254,6 +1294,7 @@ export const SAFETYHERO = [
         occurrence: 2,
         security: 1,
         rating: 5,
+        issue: "Implementing Advanced Safety Measures",
       },
     ],
   },
@@ -1266,6 +1307,7 @@ export const SAFETYHERO = [
         occurrence: 4,
         security: 5,
         rating: 3,
+        issue: "Enhancing Skills Through Workshops",
       },
       {
         matricule: 8904,
@@ -1273,6 +1315,7 @@ export const SAFETYHERO = [
         occurrence: 5,
         security: 2,
         rating: 1,
+        issue: "Improving Security Measures",
       },
       {
         matricule: 7893,
@@ -1280,6 +1323,7 @@ export const SAFETYHERO = [
         occurrence: 2,
         security: 1,
         rating: 4,
+        issue: "Reducing Incident Occurrences",
       },
       {
         matricule: 5673,
@@ -1287,6 +1331,7 @@ export const SAFETYHERO = [
         occurrence: 3,
         security: 4,
         rating: 5,
+        issue: "Implementing Advanced Safety Measures",
       },
       {
         matricule: 6783,
@@ -1294,6 +1339,7 @@ export const SAFETYHERO = [
         occurrence: 1,
         security: 3,
         rating: 2,
+        issue: "Enhancing Detection Accuracy",
       },
     ],
   },
@@ -1306,6 +1352,7 @@ export const SAFETYHERO = [
         occurrence: 4,
         security: 3,
         rating: 5,
+        issue: "Enhancing Skills Through Workshops",
       },
       {
         matricule: 7894,
@@ -1313,6 +1360,7 @@ export const SAFETYHERO = [
         occurrence: 3,
         security: 5,
         rating: 1,
+        issue: "Improving Security Protocols",
       },
       {
         matricule: 5674,
@@ -1320,6 +1368,7 @@ export const SAFETYHERO = [
         occurrence: 2,
         security: 1,
         rating: 4,
+        issue: "Reducing Incident Occurrences",
       },
       {
         matricule: 6784,
@@ -1327,6 +1376,7 @@ export const SAFETYHERO = [
         occurrence: 5,
         security: 4,
         rating: 2,
+        issue: "Implementing Advanced Safety Measures",
       },
       {
         matricule: 8906,
@@ -1334,10 +1384,12 @@ export const SAFETYHERO = [
         occurrence: 1,
         security: 2,
         rating: 3,
+        issue: "Enhancing Detection Systems",
       },
     ],
   },
 ];
+
 
 export const LEANHERO = [
   {
@@ -1349,6 +1401,7 @@ export const LEANHERO = [
         occurrence: 3,
         security: "yes",
         rating: 3,
+        projectName: "INNOVATION",
       },
       {
         matricule: 7890,
@@ -1356,6 +1409,7 @@ export const LEANHERO = [
         occurrence: 1,
         security: "yes",
         rating: 4,
+        projectName: "EFFICIENCY",
       },
       {
         matricule: 1235,
@@ -1363,6 +1417,7 @@ export const LEANHERO = [
         occurrence: 2,
         security: "no",
         rating: 2,
+        projectName: "COST_SAVINGS",
       },
       {
         matricule: 6789,
@@ -1370,6 +1425,7 @@ export const LEANHERO = [
         occurrence: 4,
         security: "yes",
         rating: 5,
+        projectName: "QUALITY_IMPROVEMENT",
       },
       {
         matricule: 4568,
@@ -1377,6 +1433,7 @@ export const LEANHERO = [
         occurrence: 5,
         security: "no",
         rating: 1,
+        projectName: "SAFETY_ENHANCEMENT",
       },
     ],
   },
@@ -1389,6 +1446,7 @@ export const LEANHERO = [
         occurrence: 1,
         security: "yes",
         rating: 4,
+        projectName: "INNOVATION",
       },
       {
         matricule: 6780,
@@ -1396,6 +1454,7 @@ export const LEANHERO = [
         occurrence: 5,
         security: "no",
         rating: 3,
+        projectName: "EFFICIENCY",
       },
       {
         matricule: 5671,
@@ -1403,6 +1462,7 @@ export const LEANHERO = [
         occurrence: 4,
         security: "yes",
         rating: 1,
+        projectName: "COST_SAVINGS",
       },
       {
         matricule: 8902,
@@ -1410,6 +1470,7 @@ export const LEANHERO = [
         occurrence: 3,
         security: "no",
         rating: 2,
+        projectName: "QUALITY_IMPROVEMENT",
       },
       {
         matricule: 7891,
@@ -1417,6 +1478,7 @@ export const LEANHERO = [
         occurrence: 2,
         security: "yes",
         rating: 5,
+        projectName: "SAFETY_ENHANCEMENT",
       },
     ],
   },
@@ -1429,6 +1491,7 @@ export const LEANHERO = [
         occurrence: 4,
         security: "no",
         rating: 3,
+        projectName: "INNOVATION",
       },
       {
         matricule: 6781,
@@ -1436,6 +1499,7 @@ export const LEANHERO = [
         occurrence: 1,
         security: "yes",
         rating: 4,
+        projectName: "EFFICIENCY",
       },
       {
         matricule: 8903,
@@ -1443,6 +1507,7 @@ export const LEANHERO = [
         occurrence: 5,
         security: "yes",
         rating: 2,
+        projectName: "COST_SAVINGS",
       },
       {
         matricule: 7892,
@@ -1450,6 +1515,7 @@ export const LEANHERO = [
         occurrence: 3,
         security: "yes",
         rating: 1,
+        projectName: "QUALITY_IMPROVEMENT",
       },
       {
         matricule: 5672,
@@ -1457,6 +1523,7 @@ export const LEANHERO = [
         occurrence: 2,
         security: "no",
         rating: 5,
+        projectName: "SAFETY_ENHANCEMENT",
       },
     ],
   },
@@ -1469,6 +1536,7 @@ export const LEANHERO = [
         occurrence: 4,
         security: "yes",
         rating: 3,
+        projectName: "INNOVATION",
       },
       {
         matricule: 8904,
@@ -1476,6 +1544,7 @@ export const LEANHERO = [
         occurrence: 5,
         security: "no",
         rating: 1,
+        projectName: "EFFICIENCY",
       },
       {
         matricule: 7893,
@@ -1483,6 +1552,7 @@ export const LEANHERO = [
         occurrence: 2,
         security: "no",
         rating: 4,
+        projectName: "COST_SAVINGS",
       },
       {
         matricule: 5673,
@@ -1490,6 +1560,7 @@ export const LEANHERO = [
         occurrence: 3,
         security: "yes",
         rating: 5,
+        projectName: "QUALITY_IMPROVEMENT",
       },
       {
         matricule: 6783,
@@ -1497,6 +1568,7 @@ export const LEANHERO = [
         occurrence: 1,
         security: "yes",
         rating: 2,
+        projectName: "SAFETY_ENHANCEMENT",
       },
     ],
   },
@@ -1509,6 +1581,7 @@ export const LEANHERO = [
         occurrence: 4,
         security: "yes",
         rating: 5,
+        projectName: "INNOVATION",
       },
       {
         matricule: 7894,
@@ -1516,6 +1589,7 @@ export const LEANHERO = [
         occurrence: 3,
         security: "yes",
         rating: 1,
+        projectName: "EFFICIENCY",
       },
       {
         matricule: 5674,
@@ -1523,6 +1597,7 @@ export const LEANHERO = [
         occurrence: 2,
         security: "no",
         rating: 4,
+        projectName: "COST_SAVINGS",
       },
       {
         matricule: 6784,
@@ -1530,6 +1605,7 @@ export const LEANHERO = [
         occurrence: 5,
         security: "yes",
         rating: 2,
+        projectName: "QUALITY_IMPROVEMENT",
       },
       {
         matricule: 8906,
@@ -1537,10 +1613,12 @@ export const LEANHERO = [
         occurrence: 1,
         security: "no",
         rating: 3,
+        projectName: "SAFETY_ENHANCEMENT",
       },
     ],
   },
 ];
+
 
 export const PROJECTCI = [
   {
@@ -1971,6 +2049,12 @@ export const PROJECTCI = [
   },
 ];
 
+function calculateMPCRating(dciwmse, workload, dailyKaizen) {
+  const dciwmseNum = parseFloat(dciwmse) / 100;
+  const workloadNum = parseFloat(workload) / 100;
+  return dciwmseNum * workloadNum * dailyKaizen;
+}
+
 export const MPC = [
   {
     month: "2024-01",
@@ -1983,6 +2067,7 @@ export const MPC = [
         workloadTarget: "65%",
         dailyKaizen: 4,
         dailyKaizenTarget: 3,
+        rating: calculateMPCRating("60%", "70%", 4),
       },
       {
         matricule: 482,
@@ -1992,6 +2077,7 @@ export const MPC = [
         workloadTarget: "63%",
         dailyKaizen: 5,
         dailyKaizenTarget: 4,
+        rating: calculateMPCRating("58%", "68%", 5),
       },
       {
         matricule: 573,
@@ -2001,6 +2087,7 @@ export const MPC = [
         workloadTarget: "67%",
         dailyKaizen: 3,
         dailyKaizenTarget: 2,
+        rating: calculateMPCRating("62%", "72%", 3),
       },
       {
         matricule: 694,
@@ -2010,6 +2097,7 @@ export const MPC = [
         workloadTarget: "64%",
         dailyKaizen: 4,
         dailyKaizenTarget: 3,
+        rating: calculateMPCRating("59%", "69%", 4),
       },
       {
         matricule: 785,
@@ -2019,6 +2107,7 @@ export const MPC = [
         workloadTarget: "66%",
         dailyKaizen: 3,
         dailyKaizenTarget: 2,
+        rating: calculateMPCRating("61%", "71%", 3),
       },
       {
         matricule: 826,
@@ -2028,6 +2117,7 @@ export const MPC = [
         workloadTarget: "68%",
         dailyKaizen: 5,
         dailyKaizenTarget: 4,
+        rating: calculateMPCRating("63%", "73%", 5),
       },
       {
         matricule: 947,
@@ -2037,6 +2127,7 @@ export const MPC = [
         workloadTarget: "62%",
         dailyKaizen: 4,
         dailyKaizenTarget: 3,
+        rating: calculateMPCRating("57%", "67%", 4),
       },
       {
         matricule: 108,
@@ -2046,6 +2137,7 @@ export const MPC = [
         workloadTarget: "69%",
         dailyKaizen: 5,
         dailyKaizenTarget: 4,
+        rating: calculateMPCRating("64%", "74%", 5),
       },
       {
         matricule: 209,
@@ -2055,6 +2147,7 @@ export const MPC = [
         workloadTarget: "61%",
         dailyKaizen: 3,
         dailyKaizenTarget: 2,
+        rating: calculateMPCRating("56%", "66%", 3),
       },
       {
         matricule: 301,
@@ -2064,6 +2157,7 @@ export const MPC = [
         workloadTarget: "70%",
         dailyKaizen: 4,
         dailyKaizenTarget: 3,
+        rating: calculateMPCRating("65%", "75%", 4),
       },
     ],
   },
@@ -2078,6 +2172,7 @@ export const MPC = [
         workloadTarget: "67%",
         dailyKaizen: 4,
         dailyKaizenTarget: 3,
+        rating: calculateMPCRating("63%", "73%", 4),
       },
       {
         matricule: 523,
@@ -2087,6 +2182,7 @@ export const MPC = [
         workloadTarget: "66%",
         dailyKaizen: 5,
         dailyKaizenTarget: 4,
+        rating: calculateMPCRating("61%", "71%", 5),
       },
       {
         matricule: 634,
@@ -2096,6 +2192,7 @@ export const MPC = [
         workloadTarget: "64%",
         dailyKaizen: 3,
         dailyKaizenTarget: 2,
+        rating: calculateMPCRating("59%", "69%", 3),
       },
       {
         matricule: 745,
@@ -2105,6 +2202,7 @@ export const MPC = [
         workloadTarget: "67%",
         dailyKaizen: 4,
         dailyKaizenTarget: 3,
+        rating: calculateMPCRating("62%", "72%", 4),
       },
       {
         matricule: 856,
@@ -2114,6 +2212,7 @@ export const MPC = [
         workloadTarget: "69%",
         dailyKaizen: 3,
         dailyKaizenTarget: 2,
+        rating: calculateMPCRating("64%", "74%", 3),
       },
       {
         matricule: 967,
@@ -2123,6 +2222,7 @@ export const MPC = [
         workloadTarget: "63%",
         dailyKaizen: 5,
         dailyKaizenTarget: 4,
+        rating: calculateMPCRating("58%", "68%", 5),
       },
       {
         matricule: 108,
@@ -2132,6 +2232,7 @@ export const MPC = [
         workloadTarget: "70%",
         dailyKaizen: 4,
         dailyKaizenTarget: 3,
+        rating: calculateMPCRating("65%", "75%", 4),
       },
       {
         matricule: 219,
@@ -2141,6 +2242,7 @@ export const MPC = [
         workloadTarget: "62%",
         dailyKaizen: 3,
         dailyKaizenTarget: 2,
+        rating: calculateMPCRating("57%", "67%", 3),
       },
       {
         matricule: 320,
@@ -2150,6 +2252,7 @@ export const MPC = [
         workloadTarget: "65%",
         dailyKaizen: 5,
         dailyKaizenTarget: 4,
+        rating: calculateMPCRating("60%", "70%", 5),
       },
       {
         matricule: 431,
@@ -2159,6 +2262,7 @@ export const MPC = [
         workloadTarget: "71%",
         dailyKaizen: 4,
         dailyKaizenTarget: 3,
+        rating: calculateMPCRating("66%", "76%", 4),
       },
     ],
   },
@@ -2173,6 +2277,7 @@ export const MPC = [
         workloadTarget: "63%",
         dailyKaizen: 3,
         dailyKaizenTarget: 2,
+        rating: calculateMPCRating("58%", "68%", 3),
       },
       {
         matricule: 565,
@@ -2182,6 +2287,7 @@ export const MPC = [
         workloadTarget: "66%",
         dailyKaizen: 4,
         dailyKaizenTarget: 3,
+        rating: calculateMPCRating("61%", "71%", 4),
       },
       {
         matricule: 676,
@@ -2191,6 +2297,7 @@ export const MPC = [
         workloadTarget: "64%",
         dailyKaizen: 5,
         dailyKaizenTarget: 4,
+        rating: calculateMPCRating("59%", "69%", 5),
       },
       {
         matricule: 787,
@@ -2200,6 +2307,7 @@ export const MPC = [
         workloadTarget: "67%",
         dailyKaizen: 3,
         dailyKaizenTarget: 2,
+        rating: calculateMPCRating("62%", "72%", 3),
       },
       {
         matricule: 898,
@@ -2209,6 +2317,7 @@ export const MPC = [
         workloadTarget: "69%",
         dailyKaizen: 4,
         dailyKaizenTarget: 3,
+        rating: calculateMPCRating("64%", "74%", 4),
       },
       {
         matricule: 909,
@@ -2218,6 +2327,7 @@ export const MPC = [
         workloadTarget: "62%",
         dailyKaizen: 5,
         dailyKaizenTarget: 4,
+        rating: calculateMPCRating("57%", "67%", 5),
       },
       {
         matricule: 110,
@@ -2227,6 +2337,7 @@ export const MPC = [
         workloadTarget: "70%",
         dailyKaizen: 3,
         dailyKaizenTarget: 2,
+        rating: calculateMPCRating("65%", "75%", 3),
       },
       {
         matricule: 221,
@@ -2236,6 +2347,7 @@ export const MPC = [
         workloadTarget: "65%",
         dailyKaizen: 4,
         dailyKaizenTarget: 3,
+        rating: calculateMPCRating("60%", "70%", 4),
       },
       {
         matricule: 332,
@@ -2245,6 +2357,7 @@ export const MPC = [
         workloadTarget: "71%",
         dailyKaizen: 5,
         dailyKaizenTarget: 4,
+        rating: calculateMPCRating("66%", "76%", 5),
       },
       {
         matricule: 443,
@@ -2254,6 +2367,7 @@ export const MPC = [
         workloadTarget: "64%",
         dailyKaizen: 3,
         dailyKaizenTarget: 2,
+        rating: calculateMPCRating("59%", "69%", 3),
       },
     ],
   },
@@ -2268,6 +2382,7 @@ export const MPC = [
         workloadTarget: "67%",
         dailyKaizen: 4,
         dailyKaizenTarget: 3,
+        rating: calculateMPCRating("63%", "73%", 4),
       },
       {
         matricule: 587,
@@ -2277,6 +2392,7 @@ export const MPC = [
         workloadTarget: "66%",
         dailyKaizen: 5,
         dailyKaizenTarget: 4,
+        rating: calculateMPCRating("61%", "71%", 5),
       },
       {
         matricule: 698,
@@ -2286,6 +2402,7 @@ export const MPC = [
         workloadTarget: "64%",
         dailyKaizen: 3,
         dailyKaizenTarget: 2,
+        rating: calculateMPCRating("59%", "69%", 3),
       },
       {
         matricule: 709,
@@ -2295,6 +2412,7 @@ export const MPC = [
         workloadTarget: "67%",
         dailyKaizen: 4,
         dailyKaizenTarget: 3,
+        rating: calculateMPCRating("62%", "72%", 4),
       },
       {
         matricule: 810,
@@ -2304,6 +2422,7 @@ export const MPC = [
         workloadTarget: "69%",
         dailyKaizen: 3,
         dailyKaizenTarget: 2,
+        rating: calculateMPCRating("64%", "74%", 3),
       },
       {
         matricule: 921,
@@ -2313,6 +2432,7 @@ export const MPC = [
         workloadTarget: "63%",
         dailyKaizen: 5,
         dailyKaizenTarget: 4,
+        rating: calculateMPCRating("58%", "68%", 5),
       },
       {
         matricule: 102,
@@ -2322,6 +2442,7 @@ export const MPC = [
         workloadTarget: "70%",
         dailyKaizen: 4,
         dailyKaizenTarget: 3,
+        rating: calculateMPCRating("65%", "75%", 4),
       },
       {
         matricule: 213,
@@ -2331,6 +2452,7 @@ export const MPC = [
         workloadTarget: "62%",
         dailyKaizen: 3,
         dailyKaizenTarget: 2,
+        rating: calculateMPCRating("57%", "67%", 3),
       },
       {
         matricule: 324,
@@ -2340,6 +2462,7 @@ export const MPC = [
         workloadTarget: "65%",
         dailyKaizen: 5,
         dailyKaizenTarget: 4,
+        rating: calculateMPCRating("60%", "70%", 5),
       },
       {
         matricule: 435,
@@ -2349,6 +2472,7 @@ export const MPC = [
         workloadTarget: "71%",
         dailyKaizen: 4,
         dailyKaizenTarget: 3,
+        rating: calculateMPCRating("66%", "76%", 4),
       },
     ],
   },
@@ -2363,6 +2487,7 @@ export const MPC = [
         workloadTarget: "63%",
         dailyKaizen: 3,
         dailyKaizenTarget: 2,
+        rating: calculateMPCRating("58%", "68%", 3),
       },
       {
         matricule: 569,
@@ -2372,6 +2497,7 @@ export const MPC = [
         workloadTarget: "66%",
         dailyKaizen: 4,
         dailyKaizenTarget: 3,
+        rating: calculateMPCRating("61%", "71%", 4),
       },
       {
         matricule: 670,
@@ -2381,6 +2507,7 @@ export const MPC = [
         workloadTarget: "64%",
         dailyKaizen: 5,
         dailyKaizenTarget: 4,
+        rating: calculateMPCRating("59%", "69%", 5),
       },
       {
         matricule: 781,
@@ -2390,6 +2517,7 @@ export const MPC = [
         workloadTarget: "67%",
         dailyKaizen: 3,
         dailyKaizenTarget: 2,
+        rating: calculateMPCRating("62%", "72%", 3),
       },
       {
         matricule: 892,
@@ -2399,6 +2527,7 @@ export const MPC = [
         workloadTarget: "69%",
         dailyKaizen: 4,
         dailyKaizenTarget: 3,
+        rating: calculateMPCRating("64%", "74%", 4),
       },
       {
         matricule: 903,
@@ -2408,6 +2537,7 @@ export const MPC = [
         workloadTarget: "62%",
         dailyKaizen: 5,
         dailyKaizenTarget: 4,
+        rating: calculateMPCRating("57%", "67%", 5),
       },
       {
         matricule: 114,
@@ -2417,6 +2547,7 @@ export const MPC = [
         workloadTarget: "70%",
         dailyKaizen: 3,
         dailyKaizenTarget: 2,
+        rating: calculateMPCRating("65%", "75%", 3),
       },
       {
         matricule: 225,
@@ -2426,6 +2557,7 @@ export const MPC = [
         workloadTarget: "65%",
         dailyKaizen: 4,
         dailyKaizenTarget: 3,
+        rating: calculateMPCRating("60%", "70%", 4),
       },
       {
         matricule: 336,
@@ -2435,6 +2567,7 @@ export const MPC = [
         workloadTarget: "71%",
         dailyKaizen: 5,
         dailyKaizenTarget: 4,
+        rating: calculateMPCRating("66%", "76%", 5),
       },
       {
         matricule: 447,
@@ -2444,6 +2577,7 @@ export const MPC = [
         workloadTarget: "64%",
         dailyKaizen: 3,
         dailyKaizenTarget: 2,
+        rating: calculateMPCRating("59%", "69%", 3),
       },
     ],
   },

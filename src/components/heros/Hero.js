@@ -48,10 +48,11 @@ const Hero = ({ type, month }) => {
           <span>matricule</span>
         </div>
         <div className={c.AbCompDac}>
+          <span style={{ width:"30%"}}>{type !== "lean"? "issue": "project name"}</span>
           <span>{type === "lean" ? "Lead a Kaizen Project" : "detection"}</span>
           <span>
             {type === "lean"
-              ? "Co-lead a Kaizen Project ( Influence )"
+              ? "Co-lead a Kaizen Project (Influence)"
               : "occurrence"}
           </span>
           <span>
@@ -63,7 +64,7 @@ const Hero = ({ type, month }) => {
       {fd.length === 0 ? (
         <h4 className={c.noCrewS}>no data found for this month</h4>
       ) : (
-        fd[0].data.map((m, i) => (
+        fd[0].data.sort((a, b) => b.rating - a.rating).map((m, i) => (
           <div className={c.rowData} key={i}>
             <div
               className={c.crEff}
@@ -78,6 +79,7 @@ const Hero = ({ type, month }) => {
               <span>{m.matricule}</span>
             </div>
             <div className={c.AbCompDac}>
+              <span style={{textAlign:"left", width:"30%", marginLeft:"16px"}}>{type !== "lean"?m.issue:m.projectName}</span>
               <span>{m.detection}</span>
               <span>{m.occurrence}</span>
               <span>{m.security}</span>

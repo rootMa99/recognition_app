@@ -49,27 +49,31 @@ const MpcHome = (p) => {
               <br />
               <p className={c.pargi}>actual | target</p>
             </span>
+            <span>rating</span>
           </div>
         </div>
         {data.length > 0 ? (
-          data[0].data.map((m) => (
-            <div className={c.rowData}>
-              <div className={c.crEff}>
-                <span>{m.matricule}</span>
+          data[0].data
+            .sort((a, b) => b.rating - a.rating)
+            .map((m) => (
+              <div className={c.rowData}>
+                <div className={c.crEff}>
+                  <span>{m.matricule}</span>
+                </div>
+                <div className={c.AbCompDac}>
+                  <span>
+                    {m.dciwmse} | {m.dciwmseTarget}
+                  </span>
+                  <span>
+                    {m.workload} | {m.workloadTarget}
+                  </span>
+                  <span>
+                    {m.dailyKaizen} | {m.dailyKaizenTarget}
+                  </span>
+                  <span>{m.rating.toFixed(2)}</span>
+                </div>
               </div>
-              <div className={c.AbCompDac}>
-                <span>
-                  {m.dciwmse} | {m.dciwmseTarget}
-                </span>
-                <span>
-                  {m.workload} | {m.workloadTarget}
-                </span>
-                <span>
-                  {m.dailyKaizen} | {m.dailyKaizenTarget}
-                </span>
-              </div>
-            </div>
-          ))
+            ))
         ) : (
           <h4 className={c.noCrewS}>no data found for this month</h4>
         )}
