@@ -42,7 +42,11 @@ const CuttingHome = (p) => {
                 <span>PMH</span>
                 <span>SetupTime</span>
                 <span>Down Time</span>
-                <span>OEE</span>
+                <span>
+                  daily kaizen
+                  <br />
+                  <p className={c.pargi}>actual | target</p>
+                </span>
               </div>
             </div>
             {data.length > 0 ? (
@@ -55,7 +59,9 @@ const CuttingHome = (p) => {
                     <span>{m.pmh}</span>
                     <span>{m.setupTime}</span>
                     <span>{m.downTime}</span>
-                    <span>{m.oee}</span>
+                    <span>
+                      {m.dailyKaizen.act} | {m.dailyKaizen.target}
+                    </span>
                   </div>
                 </div>
               ))
