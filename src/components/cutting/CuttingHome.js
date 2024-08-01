@@ -41,12 +41,14 @@ const CuttingHome = (p) => {
               <div className={`${c.AbCompDac} ${c.firstacd}`}>
                 <span>PMH</span>
                 <span>SetupTime</span>
-                <span>Down Time</span>
+                <span>Absenteeism</span>
                 <span>
                   daily kaizen
                   <br />
                   <p className={c.pargi}>actual | target</p>
                 </span>
+                <span>rating</span>
+
               </div>
             </div>
             {data.length > 0 ? (
@@ -62,6 +64,8 @@ const CuttingHome = (p) => {
                     <span>
                       {m.dailyKaizen.act} | {m.dailyKaizen.target}
                     </span>
+                    <span>{m.downTime}</span>
+
                   </div>
                 </div>
               ))

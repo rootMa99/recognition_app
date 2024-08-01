@@ -6,6 +6,12 @@ export const USERS = [
   { role: "root", userName: "root", token: "xxx.yyy.zzz" },
 ];
 
+const calculateRating = (pmh, setupTime, absenteeism, dailyKaizenAct) => {
+  const pmhDecimal = parseFloat(pmh) / 100;
+  const setupTimeDecimal = parseFloat(setupTime) / 100;
+  return pmhDecimal * setupTimeDecimal * absenteeism * dailyKaizenAct;
+};
+
 export const BESTCREW = [
   {
     month: "2024-01",
@@ -217,71 +223,81 @@ export const BESTCUTTING = [
         matricule: 6862,
         pmh: "80%",
         setupTime: "70%",
-        downTime: "100%",
+        absenteeism: 12,
         dailyKaizen: { act: 59, target: 76 },
+        rating: calculateRating("80%", "70%", 12, 59), // 395.28
       },
       {
         matricule: 1234,
         pmh: "85%",
         setupTime: "75%",
-        downTime: "100%",
+        absenteeism: 10,
         dailyKaizen: { act: 62, target: 79 },
+        rating: calculateRating("85%", "75%", 10, 62), // 395.25
       },
       {
         matricule: 5678,
         pmh: "90%",
         setupTime: "80%",
-        downTime: "100%",
+        absenteeism: 8,
         dailyKaizen: { act: 65, target: 82 },
+        rating: calculateRating("90%", "80%", 8, 65), // 374.40
       },
       {
         matricule: 4321,
         pmh: "82%",
         setupTime: "72%",
-        downTime: "100%",
+        absenteeism: 11,
         dailyKaizen: { act: 61, target: 78 },
+        rating: calculateRating("82%", "72%", 11, 61), // 394.97
       },
       {
         matricule: 8765,
         pmh: "84%",
         setupTime: "74%",
-        downTime: "100%",
+        absenteeism: 10,
         dailyKaizen: { act: 63, target: 80 },
+        rating: calculateRating("84%", "74%", 10, 63), // 390.60
       },
       {
         matricule: 3456,
         pmh: "81%",
         setupTime: "71%",
-        downTime: "100%",
+        absenteeism: 12,
         dailyKaizen: { act: 60, target: 77 },
+        rating: calculateRating("81%", "71%", 12, 60), // 413.28
       },
       {
         matricule: 7890,
         pmh: "87%",
         setupTime: "77%",
-        downTime: "100%",
+        absenteeism: 9,
         dailyKaizen: { act: 64, target: 81 },
+        rating: calculateRating("87%", "77%", 9, 64), // 385.42
       },
       {
         matricule: 4567,
         pmh: "83%",
         setupTime: "73%",
-        downTime: "100%",
+        absenteeism: 11,
         dailyKaizen: { act: 62, target: 79 },
+        rating: calculateRating("83%", "73%", 11, 62), // 405.41
       },
       {
         matricule: 8901,
         pmh: "86%",
         setupTime: "76%",
-        downTime: "100%",
+        absenteeism: 10,
         dailyKaizen: { act: 63, target: 80 },
+        rating: calculateRating("86%", "76%", 10, 63), // 411.84
       },
       {
         matricule: 5670,
         pmh: "89%",
         setupTime: "79%",
-        downTime: "100%",
+        absenteeism: 8,
         dailyKaizen: { act: 66, target: 83 },
+        rating: calculateRating("89%", "79%", 8, 66), // 464.42
       },
     ],
   },
@@ -292,71 +308,81 @@ export const BESTCUTTING = [
         matricule: 2345,
         pmh: "82%",
         setupTime: "72%",
-        downTime: "100%",
+        absenteeism: 11,
         dailyKaizen: { act: 61, target: 78 },
+        rating: calculateRating("82%", "72%", 11, 61), // 394.97
       },
       {
         matricule: 6789,
         pmh: "86%",
         setupTime: "76%",
-        downTime: "100%",
+        absenteeism: 10,
         dailyKaizen: { act: 64, target: 81 },
+        rating: calculateRating("86%", "76%", 10, 64), // 417.28
       },
       {
         matricule: 3452,
         pmh: "84%",
         setupTime: "74%",
-        downTime: "100%",
+        absenteeism: 9,
         dailyKaizen: { act: 62, target: 79 },
+        rating: calculateRating("84%", "74%", 9, 62), // 347.76
       },
       {
         matricule: 7893,
         pmh: "81%",
         setupTime: "71%",
-        downTime: "100%",
+        absenteeism: 12,
         dailyKaizen: { act: 60, target: 77 },
+        rating: calculateRating("81%", "71%", 12, 60), // 413.28
       },
       {
         matricule: 4568,
         pmh: "87%",
         setupTime: "77%",
-        downTime: "100%",
+        absenteeism: 9,
         dailyKaizen: { act: 65, target: 82 },
+        rating: calculateRating("87%", "77%", 9, 65), // 392.42
       },
       {
         matricule: 8902,
         pmh: "83%",
         setupTime: "73%",
-        downTime: "100%",
+        absenteeism: 10,
         dailyKaizen: { act: 62, target: 79 },
+        rating: calculateRating("83%", "73%", 10, 62), // 372.34
       },
       {
         matricule: 5671,
         pmh: "89%",
         setupTime: "79%",
-        downTime: "100%",
+        absenteeism: 8,
         dailyKaizen: { act: 66, target: 83 },
+        rating: calculateRating("89%", "79%", 8, 66), // 464.42
       },
       {
         matricule: 6780,
         pmh: "85%",
         setupTime: "75%",
-        downTime: "100%",
+        absenteeism: 10,
         dailyKaizen: { act: 63, target: 80 },
+        rating: calculateRating("85%", "75%", 10, 63), // 400.50
       },
       {
         matricule: 7891,
         pmh: "88%",
         setupTime: "78%",
-        downTime: "100%",
+        absenteeism: 9,
         dailyKaizen: { act: 65, target: 82 },
+        rating: calculateRating("88%", "78%", 9, 65), // 400.39
       },
       {
         matricule: 8903,
         pmh: "86%",
         setupTime: "76%",
-        downTime: "100%",
+        absenteeism: 10,
         dailyKaizen: { act: 64, target: 81 },
+        rating: calculateRating("86%", "76%", 10, 64), // 417.28
       },
     ],
   },
@@ -367,226 +393,85 @@ export const BESTCUTTING = [
         matricule: 3456,
         pmh: "83%",
         setupTime: "73%",
-        downTime: "100%",
+        absenteeism: 10,
         dailyKaizen: { act: 62, target: 79 },
+        rating: calculateRating("83%", "73%", 10, 62), // 372.34
       },
       {
         matricule: 7890,
         pmh: "87%",
         setupTime: "77%",
-        downTime: "100%",
+        absenteeism: 9,
         dailyKaizen: { act: 65, target: 82 },
+        rating: calculateRating("87%", "77%", 9, 65), // 392.42
       },
       {
         matricule: 4567,
         pmh: "84%",
         setupTime: "74%",
-        downTime: "100%",
+        absenteeism: 9,
         dailyKaizen: { act: 62, target: 79 },
+        rating: calculateRating("84%", "74%", 9, 62), // 347.76
       },
       {
         matricule: 8901,
         pmh: "85%",
         setupTime: "75%",
-        downTime: "100%",
+        absenteeism: 10,
         dailyKaizen: { act: 63, target: 80 },
+        rating: calculateRating("85%", "75%", 10, 63), // 400.50
       },
       {
         matricule: 5670,
         pmh: "81%",
         setupTime: "71%",
-        downTime: "100%",
+        absenteeism: 12,
         dailyKaizen: { act: 60, target: 77 },
+        rating: calculateRating("81%", "71%", 12, 60), // 413.28
       },
       {
         matricule: 6780,
         pmh: "89%",
         setupTime: "79%",
-        downTime: "100%",
+        absenteeism: 8,
         dailyKaizen: { act: 66, target: 83 },
+        rating: calculateRating("89%", "79%", 8, 66), // 464.42
       },
       {
         matricule: 7891,
-        pmh: "88%",
-        setupTime: "78%",
-        downTime: "100%",
-        dailyKaizen: { act: 65, target: 82 },
-      },
-      {
-        matricule: 8902,
         pmh: "86%",
         setupTime: "76%",
-        downTime: "100%",
+        absenteeism: 10,
         dailyKaizen: { act: 64, target: 81 },
-      },
-      {
-        matricule: 5671,
-        pmh: "82%",
-        setupTime: "72%",
-        downTime: "100%",
-        dailyKaizen: { act: 61, target: 78 },
-      },
-      {
-        matricule: 6781,
-        pmh: "84%",
-        setupTime: "74%",
-        downTime: "100%",
-        dailyKaizen: { act: 62, target: 79 },
-      },
-    ],
-  },
-  {
-    month: "2024-04",
-    data: [
-      {
-        matricule: 4567,
-        pmh: "86%",
-        setupTime: "76%",
-        downTime: "100%",
-        dailyKaizen: { act: 64, target: 81 },
-      },
-      {
-        matricule: 8901,
-        pmh: "82%",
-        setupTime: "72%",
-        downTime: "100%",
-        dailyKaizen: { act: 61, target: 78 },
-      },
-      {
-        matricule: 5670,
-        pmh: "83%",
-        setupTime: "73%",
-        downTime: "100%",
-        dailyKaizen: { act: 62, target: 79 },
-      },
-      {
-        matricule: 6780,
-        pmh: "89%",
-        setupTime: "79%",
-        downTime: "100%",
-        dailyKaizen: { act: 66, target: 83 },
-      },
-      {
-        matricule: 7891,
-        pmh: "88%",
-        setupTime: "78%",
-        downTime: "100%",
-        dailyKaizen: { act: 65, target: 82 },
-      },
-      {
-        matricule: 8902,
-        pmh: "85%",
-        setupTime: "75%",
-        downTime: "100%",
-        dailyKaizen: { act: 63, target: 80 },
-      },
-      {
-        matricule: 5671,
-        pmh: "87%",
-        setupTime: "77%",
-        downTime: "100%",
-        dailyKaizen: { act: 65, target: 82 },
-      },
-      {
-        matricule: 6781,
-        pmh: "81%",
-        setupTime: "71%",
-        downTime: "100%",
-        dailyKaizen: { act: 60, target: 77 },
-      },
-      {
-        matricule: 7892,
-        pmh: "84%",
-        setupTime: "74%",
-        downTime: "100%",
-        dailyKaizen: { act: 62, target: 79 },
+        rating: calculateRating("86%", "76%", 10, 64), // 417.28
       },
       {
         matricule: 8903,
-        pmh: "86%",
-        setupTime: "76%",
-        downTime: "100%",
-        dailyKaizen: { act: 64, target: 81 },
-      },
-    ],
-  },
-  {
-    month: "2024-05",
-    data: [
-      {
-        matricule: 5670,
-        pmh: "80%",
-        setupTime: "70%",
-        downTime: "100%",
-        dailyKaizen: { act: 59, target: 76 },
-      },
-      {
-        matricule: 6780,
-        pmh: "85%",
-        setupTime: "75%",
-        downTime: "100%",
-        dailyKaizen: { act: 63, target: 80 },
-      },
-      {
-        matricule: 7890,
-        pmh: "90%",
-        setupTime: "80%",
-        downTime: "100%",
-        dailyKaizen: { act: 66, target: 83 },
-      },
-      {
-        matricule: 8900,
         pmh: "82%",
         setupTime: "72%",
-        downTime: "100%",
+        absenteeism: 11,
         dailyKaizen: { act: 61, target: 78 },
-      },
-      {
-        matricule: 1234,
-        pmh: "84%",
-        setupTime: "74%",
-        downTime: "100%",
-        dailyKaizen: { act: 62, target: 79 },
+        rating: calculateRating("82%", "72%", 11, 61), // 394.97
       },
       {
         matricule: 2345,
-        pmh: "81%",
-        setupTime: "71%",
-        downTime: "100%",
-        dailyKaizen: { act: 60, target: 77 },
-      },
-      {
-        matricule: 3456,
-        pmh: "87%",
-        setupTime: "77%",
-        downTime: "100%",
-        dailyKaizen: { act: 65, target: 82 },
-      },
-      {
-        matricule: 4567,
-        pmh: "83%",
-        setupTime: "73%",
-        downTime: "100%",
-        dailyKaizen: { act: 62, target: 79 },
-      },
-      {
-        matricule: 5678,
-        pmh: "86%",
-        setupTime: "76%",
-        downTime: "100%",
-        dailyKaizen: { act: 64, target: 81 },
+        pmh: "84%",
+        setupTime: "74%",
+        absenteeism: 10,
+        dailyKaizen: { act: 63, target: 80 },
+        rating: calculateRating("84%", "74%", 10, 63), // 390.60
       },
       {
         matricule: 6789,
-        pmh: "89%",
-        setupTime: "79%",
-        downTime: "100%",
-        dailyKaizen: { act: 66, target: 83 },
+        pmh: "88%",
+        setupTime: "78%",
+        absenteeism: 9,
+        dailyKaizen: { act: 65, target: 82 },
+        rating: calculateRating("88%", "78%", 9, 65), // 400.39
       },
     ],
   },
 ];
-
 
 export const BESTLPOP = [
   {
