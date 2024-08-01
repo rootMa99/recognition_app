@@ -12,6 +12,11 @@ const calculateRating = (pmh, setupTime, absenteeism, dailyKaizenAct) => {
   return pmhDecimal * setupTimeDecimal * absenteeism * dailyKaizenAct;
 };
 
+const calculateCrewRating = (efficiency, abs, cc, dailyKaizen) => {
+  const absDecimal = parseFloat(abs) / 100;
+  return efficiency * absDecimal * cc * dailyKaizen;
+};
+
 export const BESTCREW = [
   {
     month: "2024-01",
@@ -22,6 +27,7 @@ export const BESTCREW = [
         abs: { act: "1%", target: "3%" },
         cc: { act: 5, target: 5 },
         dailyKaizen: { act: 100, target: 100 },
+        rating: calculateCrewRating(94, "1%", 5, 100),
       },
       {
         crew: "k01A",
@@ -29,6 +35,7 @@ export const BESTCREW = [
         abs: { act: "3%", target: "5%" },
         cc: { act: 4, target: 5 },
         dailyKaizen: { act: 95, target: 98 },
+        rating: calculateCrewRating(85, "3%", 4, 95),
       },
       {
         crew: "k01B",
@@ -36,6 +43,7 @@ export const BESTCREW = [
         abs: { act: "2%", target: "4%" },
         cc: { act: 5, target: 5 },
         dailyKaizen: { act: 105, target: 95 },
+        rating: calculateCrewRating(88, "2%", 5, 105),
       },
       {
         crew: "k04C",
@@ -43,6 +51,7 @@ export const BESTCREW = [
         abs: { act: "1%", target: "3%" },
         cc: { act: 5, target: 5 },
         dailyKaizen: { act: 102, target: 99 },
+        rating: calculateCrewRating(90, "1%", 5, 102),
       },
       {
         crew: "k05B",
@@ -50,6 +59,7 @@ export const BESTCREW = [
         abs: { act: "4%", target: "5%" },
         cc: { act: 5, target: 5 },
         dailyKaizen: { act: 98, target: 97 },
+        rating: calculateCrewRating(85, "4%", 5, 98),
       },
     ],
   },
@@ -62,6 +72,7 @@ export const BESTCREW = [
         abs: { act: "1%", target: "3%" },
         cc: { act: 5, target: 5 },
         dailyKaizen: { act: 100, target: 100 },
+        rating: calculateCrewRating(90, "1%", 5, 100),
       },
       {
         crew: "k02A",
@@ -69,6 +80,7 @@ export const BESTCREW = [
         abs: { act: "3%", target: "5%" },
         cc: { act: 4, target: 5 },
         dailyKaizen: { act: 96, target: 100 },
+        rating: calculateCrewRating(87, "3%", 4, 96),
       },
       {
         crew: "k04B",
@@ -76,6 +88,7 @@ export const BESTCREW = [
         abs: { act: "2%", target: "4%" },
         cc: { act: 5, target: 5 },
         dailyKaizen: { act: 97, target: 98 },
+        rating: calculateCrewRating(88, "2%", 5, 97),
       },
       {
         crew: "k02B",
@@ -83,6 +96,7 @@ export const BESTCREW = [
         abs: { act: "2%", target: "4%" },
         cc: { act: 4, target: 5 },
         dailyKaizen: { act: 101, target: 99 },
+        rating: calculateCrewRating(89, "2%", 4, 101),
       },
       {
         crew: "k02C",
@@ -90,6 +104,7 @@ export const BESTCREW = [
         abs: { act: "1%", target: "3%" },
         cc: { act: 5, target: 5 },
         dailyKaizen: { act: 99, target: 102 },
+        rating: calculateCrewRating(91, "1%", 5, 99),
       },
     ],
   },
@@ -102,6 +117,7 @@ export const BESTCREW = [
         abs: { act: "1%", target: "3%" },
         cc: { act: 5, target: 5 },
         dailyKaizen: { act: 100, target: 100 },
+        rating: calculateCrewRating(91, "1%", 5, 100),
       },
       {
         crew: "k03A",
@@ -109,6 +125,7 @@ export const BESTCREW = [
         abs: { act: "2%", target: "5%" },
         cc: { act: 4, target: 5 },
         dailyKaizen: { act: 95, target: 96 },
+        rating: calculateCrewRating(86, "2%", 4, 95),
       },
       {
         crew: "k03B",
@@ -116,6 +133,7 @@ export const BESTCREW = [
         abs: { act: "2%", target: "4%" },
         cc: { act: 5, target: 5 },
         dailyKaizen: { act: 98, target: 97 },
+        rating: calculateCrewRating(88, "2%", 5, 98),
       },
       {
         crew: "k03C",
@@ -123,6 +141,7 @@ export const BESTCREW = [
         abs: { act: "1%", target: "3%" },
         cc: { act: 5, target: 5 },
         dailyKaizen: { act: 99, target: 98 },
+        rating: calculateCrewRating(90, "1%", 5, 99),
       },
       {
         crew: "k05A",
@@ -130,6 +149,7 @@ export const BESTCREW = [
         abs: { act: "2%", target: "5%" },
         cc: { act: 3, target: 5 },
         dailyKaizen: { act: 104, target: 102 },
+        rating: calculateCrewRating(90, "2%", 3, 104),
       },
     ],
   },
@@ -142,6 +162,7 @@ export const BESTCREW = [
         abs: { act: "2%", target: "5%" },
         cc: { act: 3, target: 5 },
         dailyKaizen: { act: 102, target: 104 },
+        rating: calculateCrewRating(90, "2%", 3, 102),
       },
       {
         crew: "R04A",
@@ -149,6 +170,7 @@ export const BESTCREW = [
         abs: { act: "3%", target: "5%" },
         cc: { act: 4, target: 5 },
         dailyKaizen: { act: 98, target: 99 },
+        rating: calculateCrewRating(89, "3%", 4, 98),
       },
       {
         crew: "X04B",
@@ -156,6 +178,7 @@ export const BESTCREW = [
         abs: { act: "2%", target: "4%" },
         cc: { act: 5, target: 5 },
         dailyKaizen: { act: 101, target: 102 },
+        rating: calculateCrewRating(92, "2%", 5, 101),
       },
       {
         crew: "k04C",
@@ -163,6 +186,7 @@ export const BESTCREW = [
         abs: { act: "1%", target: "3%" },
         cc: { act: 5, target: 5 },
         dailyKaizen: { act: 100, target: 100 },
+        rating: calculateCrewRating(94, "1%", 5, 100),
       },
       {
         crew: "k03C",
@@ -170,6 +194,7 @@ export const BESTCREW = [
         abs: { act: "1%", target: "3%" },
         cc: { act: 5, target: 5 },
         dailyKaizen: { act: 99, target: 101 },
+        rating: calculateCrewRating(90, "1%", 5, 99),
       },
     ],
   },
@@ -182,6 +207,7 @@ export const BESTCREW = [
         abs: { act: "2%", target: "5%" },
         cc: { act: 4, target: 5 },
         dailyKaizen: { act: 97, target: 96 },
+        rating: calculateCrewRating(86, "2%", 4, 97),
       },
       {
         crew: "k05A",
@@ -189,6 +215,7 @@ export const BESTCREW = [
         abs: { act: "2%", target: "5%" },
         cc: { act: 3, target: 5 },
         dailyKaizen: { act: 98, target: 100 },
+        rating: calculateCrewRating(90, "2%", 3, 98),
       },
       {
         crew: "R05B",
@@ -196,6 +223,7 @@ export const BESTCREW = [
         abs: { act: "4%", target: "5%" },
         cc: { act: 5, target: 5 },
         dailyKaizen: { act: 101, target: 104 },
+        rating: calculateCrewRating(85, "4%", 5, 101),
       },
       {
         crew: "B01C",
@@ -203,6 +231,7 @@ export const BESTCREW = [
         abs: { act: "3%", target: "4%" },
         cc: { act: 5, target: 5 },
         dailyKaizen: { act: 100, target: 102 },
+        rating: calculateCrewRating(88, "3%", 5, 100),
       },
       {
         crew: "X03C",
@@ -210,10 +239,13 @@ export const BESTCREW = [
         abs: { act: "1%", target: "3%" },
         cc: { act: 5, target: 5 },
         dailyKaizen: { act: 99, target: 101 },
+        rating: calculateCrewRating(90, "1%", 5, 99),
       },
     ],
   },
 ];
+
+
 
 export const BESTCUTTING = [
   {

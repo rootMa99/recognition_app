@@ -51,30 +51,34 @@ const FinalAssemblyHome = (p) => {
               <br />
               <p className={c.pargi}>actual | target</p>
             </span>
+            <span>rating</span>
           </div>
         </div>
         {data.length > 0 ? (
-          data[0].data.map((m) => (
-            <div className={c.rowData}>
-              <div className={c.crEff}>
-                <span>{m.crew}</span>
+          data[0].data
+            .sort((a, b) => b.rating - a.rating)
+            .map((m) => (
+              <div className={c.rowData}>
+                <div className={c.crEff}>
+                  <span>{m.crew}</span>
+                </div>
+                <div className={c.AbCompDac}>
+                  <span>
+                    {m.efficiency.act}% | {m.efficiency.target}%
+                  </span>
+                  <span>
+                    {m.abs.act} | {m.abs.target}
+                  </span>
+                  <span>
+                    {m.cc.act} | {m.cc.target}
+                  </span>
+                  <span>
+                    {m.dailyKaizen.act} | {m.dailyKaizen.target}
+                  </span>
+                  <span>{m.rating}</span>
+                </div>
               </div>
-              <div className={c.AbCompDac}>
-                <span>
-                  {m.efficiency.act}% | {m.efficiency.target}%
-                </span>
-                <span>
-                  {m.abs.act} | {m.abs.target}
-                </span>
-                <span>
-                  {m.cc.act} | {m.cc.target}
-                </span>
-                <span>
-                  {m.dailyKaizen.act} | {m.dailyKaizen.target}
-                </span>
-              </div>
-            </div>
-          ))
+            ))
         ) : (
           <h4 className={c.noCrewS}>no data found for this month</h4>
         )}
