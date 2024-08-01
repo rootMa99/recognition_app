@@ -1,27 +1,27 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import c from "./Hero.module.css";
 import { PROJECTCI } from "../../DemoData";
 
 const CiProject = (p) => {
   const fd = PROJECTCI.filter((f) => f.month === p.month);
 
-  const initialRatings =
-    fd.length > 0 ? fd[0].data.map((item) => item.rating || 0) : [];
-  const [ratings, setRatings] = useState(initialRatings);
+  // const initialRatings =
+  //   fd.length > 0 ? fd[0].data.map((item) => item.rating || 0) : [];
+  // const [ratings, setRatings] = useState(initialRatings);
 
-  useEffect(() => {
-    const initialRatings =
-      fd.length > 0 ? fd[0].data.map((item) => item.rating || 0) : [];
-    setRatings(initialRatings);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [p.month, fd.length]);
+  // useEffect(() => {
+  //   const initialRatings =
+  //     fd.length > 0 ? fd[0].data.map((item) => item.rating || 0) : [];
+  //   setRatings(initialRatings);
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [p.month, fd.length]);
 
-  const handleRatingChange = (index, value) => {
-    const newRatings = [...ratings];
-    newRatings[index] = value;
-    setRatings(newRatings);
-    fd[0].data[index].rating = value;
-  };
+  // const handleRatingChange = (index, value) => {
+  //   const newRatings = [...ratings];
+  //   newRatings[index] = value;
+  //   setRatings(newRatings);
+  //   fd[0].data[index].rating = value;
+  // };
   return (
     <React.Fragment>
       <div
@@ -73,53 +73,7 @@ const CiProject = (p) => {
                 {m.approach}
               </span>
               <span style={{ width: "15%" }}>
-                <div className={c.rating}>
-                  <input
-                    value="5"
-                    name={`rating-${i}`}
-                    id={`star5-${i}`}
-                    type="radio"
-                    checked={ratings[i] === 5}
-                    onChange={() => handleRatingChange(i, 5)}
-                  />
-                  <label htmlFor={`star5-${i}`}></label>
-                  <input
-                    value="4"
-                    name={`rating-${i}`}
-                    id={`star4-${i}`}
-                    type="radio"
-                    checked={ratings[i] === 4}
-                    onChange={() => handleRatingChange(i, 4)}
-                  />
-                  <label htmlFor={`star4-${i}`}></label>
-                  <input
-                    value="3"
-                    name={`rating-${i}`}
-                    id={`star3-${i}`}
-                    type="radio"
-                    checked={ratings[i] === 3}
-                    onChange={() => handleRatingChange(i, 3)}
-                  />
-                  <label htmlFor={`star3-${i}`}></label>
-                  <input
-                    value="2"
-                    name={`rating-${i}`}
-                    id={`star2-${i}`}
-                    type="radio"
-                    checked={ratings[i] === 2}
-                    onChange={() => handleRatingChange(i, 2)}
-                  />
-                  <label htmlFor={`star2-${i}`}></label>
-                  <input
-                    value="1"
-                    name={`rating-${i}`}
-                    id={`star1-${i}`}
-                    type="radio"
-                    checked={ratings[i] === 1}
-                    onChange={() => handleRatingChange(i, 1)}
-                  />
-                  <label htmlFor={`star1-${i}`}></label>
-                </div>{" "}
+              {m.rating}/5
               </span>
             </div>
           </div>
@@ -130,3 +84,51 @@ const CiProject = (p) => {
 };
 
 export default CiProject;
+
+// <div className={c.rating}>
+// <input
+//   value="5"
+//   name={`rating-${i}`}
+//   id={`star5-${i}`}
+//   type="radio"
+//   checked={ratings[i] === 5}
+//   onChange={() => handleRatingChange(i, 5)}
+// />
+// <label htmlFor={`star5-${i}`}></label>
+// <input
+//   value="4"
+//   name={`rating-${i}`}
+//   id={`star4-${i}`}
+//   type="radio"
+//   checked={ratings[i] === 4}
+//   onChange={() => handleRatingChange(i, 4)}
+// />
+// <label htmlFor={`star4-${i}`}></label>
+// <input
+//   value="3"
+//   name={`rating-${i}`}
+//   id={`star3-${i}`}
+//   type="radio"
+//   checked={ratings[i] === 3}
+//   onChange={() => handleRatingChange(i, 3)}
+// />
+// <label htmlFor={`star3-${i}`}></label>
+// <input
+//   value="2"
+//   name={`rating-${i}`}
+//   id={`star2-${i}`}
+//   type="radio"
+//   checked={ratings[i] === 2}
+//   onChange={() => handleRatingChange(i, 2)}
+// />
+// <label htmlFor={`star2-${i}`}></label>
+// <input
+//   value="1"
+//   name={`rating-${i}`}
+//   id={`star1-${i}`}
+//   type="radio"
+//   checked={ratings[i] === 1}
+//   onChange={() => handleRatingChange(i, 1)}
+// />
+// <label htmlFor={`star1-${i}`}></label>
+// </div>{" "}
