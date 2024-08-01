@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import c from "./Hero.module.css";
 import { LEANHERO, QUALITYHERO, SAFETYHERO } from "../../DemoData";
 
@@ -13,24 +13,24 @@ const Hero = ({ type, month }) => {
       : [];
   const fd = data.filter((f) => f.month === month);
 
-  const initialRatings =
-    fd.length > 0 ? fd[0].data.map((item) => item.rating || 0) : [];
-  console.log(initialRatings);
-  const [ratings, setRatings] = useState(initialRatings);
+  // const initialRatings =
+  //   fd.length > 0 ? fd[0].data.map((item) => item.rating || 0) : [];
+  // console.log(initialRatings);
+  // const [ratings, setRatings] = useState(initialRatings);
 
-  useEffect(() => {
-    const initialRatings =
-      fd.length > 0 ? fd[0].data.map((item) => item.rating || 0) : [];
-    setRatings(initialRatings);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [month, type, fd.length]);
+  // useEffect(() => {
+  //   const initialRatings =
+  //     fd.length > 0 ? fd[0].data.map((item) => item.rating || 0) : [];
+  //   setRatings(initialRatings);
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [month, type, fd.length]);
 
-  const handleRatingChange = (index, value) => {
-    const newRatings = [...ratings];
-    newRatings[index] = value;
-    setRatings(newRatings);
-    fd[0].data[index].rating = value;
-  };
+  // const handleRatingChange = (index, value) => {
+  //   const newRatings = [...ratings];
+  //   newRatings[index] = value;
+  //   setRatings(newRatings);
+  //   fd[0].data[index].rating = value;
+  // };
 
   return (
     <React.Fragment>
@@ -81,55 +81,7 @@ const Hero = ({ type, month }) => {
               <span>{m.detection}</span>
               <span>{m.occurrence}</span>
               <span>{m.security}</span>
-              <span>
-                <div className={c.rating}>
-                  <input
-                    value="5"
-                    name={`rating-${type}-${i}`}
-                    id={`star5-${type}-${i}`}
-                    type="radio"
-                    checked={ratings[i] === 5}
-                    onChange={() => handleRatingChange(i, 5)}
-                  />
-                  <label htmlFor={`star5-${type}-${i}`}></label>
-                  <input
-                    value="4"
-                    name={`rating-${type}-${i}`}
-                    id={`star4-${type}-${i}`}
-                    type="radio"
-                    checked={ratings[i] === 4}
-                    onChange={() => handleRatingChange(i, 4)}
-                  />
-                  <label htmlFor={`star4-${type}-${i}`}></label>
-                  <input
-                    value="3"
-                    name={`rating-${type}-${i}`}
-                    id={`star3-${type}-${i}`}
-                    type="radio"
-                    checked={ratings[i] === 3}
-                    onChange={() => handleRatingChange(i, 3)}
-                  />
-                  <label htmlFor={`star3-${type}-${i}`}></label>
-                  <input
-                    value="2"
-                    name={`rating-${type}-${i}`}
-                    id={`star2-${type}-${i}`}
-                    type="radio"
-                    checked={ratings[i] === 2}
-                    onChange={() => handleRatingChange(i, 2)}
-                  />
-                  <label htmlFor={`star2-${type}-${i}`}></label>
-                  <input
-                    value="1"
-                    name={`rating-${type}-${i}`}
-                    id={`star1-${type}-${i}`}
-                    type="radio"
-                    checked={ratings[i] === 1}
-                    onChange={() => handleRatingChange(i, 1)}
-                  />
-                  <label htmlFor={`star1-${type}-${i}`}></label>
-                </div>
-              </span>
+              <span>{m.rating}</span>
             </div>
           </div>
         ))
@@ -138,3 +90,50 @@ const Hero = ({ type, month }) => {
   );
 };
 export default Hero;
+// <div className={c.rating}>
+//                   <input
+//                     value="5"
+//                     name={`rating-${type}-${i}`}
+//                     id={`star5-${type}-${i}`}
+//                     type="radio"
+//                     checked={ratings[i] === 5}
+//                     onChange={() => handleRatingChange(i, 5)}
+//                   />
+//                   <label htmlFor={`star5-${type}-${i}`}></label>
+//                   <input
+//                     value="4"
+//                     name={`rating-${type}-${i}`}
+//                     id={`star4-${type}-${i}`}
+//                     type="radio"
+//                     checked={ratings[i] === 4}
+//                     onChange={() => handleRatingChange(i, 4)}
+//                   />
+//                   <label htmlFor={`star4-${type}-${i}`}></label>
+//                   <input
+//                     value="3"
+//                     name={`rating-${type}-${i}`}
+//                     id={`star3-${type}-${i}`}
+//                     type="radio"
+//                     checked={ratings[i] === 3}
+//                     onChange={() => handleRatingChange(i, 3)}
+//                   />
+//                   <label htmlFor={`star3-${type}-${i}`}></label>
+//                   <input
+//                     value="2"
+//                     name={`rating-${type}-${i}`}
+//                     id={`star2-${type}-${i}`}
+//                     type="radio"
+//                     checked={ratings[i] === 2}
+//                     onChange={() => handleRatingChange(i, 2)}
+//                   />
+//                   <label htmlFor={`star2-${type}-${i}`}></label>
+//                   <input
+//                     value="1"
+//                     name={`rating-${type}-${i}`}
+//                     id={`star1-${type}-${i}`}
+//                     type="radio"
+//                     checked={ratings[i] === 1}
+//                     onChange={() => handleRatingChange(i, 1)}
+//                   />
+//                   <label htmlFor={`star1-${type}-${i}`}></label>
+//                 </div>
